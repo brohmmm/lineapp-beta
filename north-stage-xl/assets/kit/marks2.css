@@ -1,0 +1,44 @@
+/* LineApp R3 kit · marks2.css — designed tick and cross. Size = font-size (1em box). */
+.km2 {
+  --km2-tick: #C7E635;                 /* lime tick on dark */
+  --km2-cross: rgba(255, 255, 255, .42); /* muted cross on dark */
+  --km2-badge-ink: #0B0C0E;            /* tick inside the lime badge */
+  --km2-cross-bg: rgba(255, 255, 255, .08);
+  display: inline-block; width: 1em; height: 1em; flex: none; vertical-align: -0.16em; line-height: 0;
+}
+.km2__svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.km2--tick { color: var(--km2-tick); }
+.km2--cross { color: var(--km2-cross); }
+.km2__glyph { stroke: currentColor; }
+.km2__ring { stroke: currentColor; opacity: .55; }
+
+/* badge: filled circle, glyph knocked out in ink (tick) or muted (cross) */
+.km2--badge.km2--tick .km2__bg { fill: var(--km2-tick); }
+.km2--badge.km2--tick .km2__glyph { stroke: var(--km2-badge-ink); }
+.km2--badge.km2--cross .km2__bg { fill: var(--km2-cross-bg); }
+
+/* on light backgrounds (white cards, the partner panel, printouts) */
+.km2-light .km2, .km2.km2-light {
+  --km2-tick: #5F7D00;                 /* darker lime, 4.6:1 on white */
+  --km2-cross: #A2A6AC;
+  --km2-cross-bg: #EEF0F1;
+}
+.km2-light .km2--badge.km2--tick .km2__bg, .km2-light.km2--badge.km2--tick .km2__bg { fill: #C7E635; }
+.km2-light .km2--badge.km2--tick .km2__glyph, .km2-light.km2--badge.km2--tick .km2__glyph { stroke: #0B0C0E; }
+
+/* draw-on (opt-in with data-mark2-draw) */
+.km2--draw .km2__glyph { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.km2--draw .km2__bg, .km2--draw .km2__ring { transform-origin: 12px 12px; transform: scale(.6); opacity: 0; transition: transform .38s cubic-bezier(.2, .9, .25, 1.25), opacity .2s ease; }
+.km2--draw.is-drawn .km2__bg { transform: none; opacity: 1; }
+.km2--draw.is-drawn .km2__ring { transform: none; opacity: .55; }
+.km2--draw.is-drawn .km2__glyph { stroke-dashoffset: 0; transition: stroke-dashoffset .34s cubic-bezier(.55, 0, .25, 1) calc(.12s + var(--i, 0) * .14s); }
+@media (prefers-reduced-motion: reduce) {
+  .km2--draw .km2__glyph { stroke-dashoffset: 0; }
+  .km2--draw .km2__bg, .km2--draw .km2__ring { transform: none; opacity: 1; transition: none; }
+}
+
+/* a ready-made yes/no list row: <li class="km2-row"><i data-mark2="tick"></i><span>…</span></li> */
+.km2-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .7em; }
+.km2-row { display: grid; grid-template-columns: 1.25em 1fr; column-gap: .65em; align-items: start; line-height: 1.35; }
+.km2-row > .km2 { width: 1.25em; height: 1.25em; margin-top: .05em; vertical-align: 0; }
+.km2-row.is-no { color: rgba(255, 255, 255, .58); }

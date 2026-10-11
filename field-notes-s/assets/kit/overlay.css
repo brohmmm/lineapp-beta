@@ -1,0 +1,103 @@
+/*! LineApp R2 kit · overlay.css · large modal overlay (pairs with overlay.js) */
+.kov {
+  --kov-bg: #121316;
+  --kov-fg: #fff;
+  --kov-muted: #9A9DA3;
+  --kov-line: rgba(255, 255, 255, .09);
+  --kov-accent: #C7E635;
+  --kov-scrim: rgba(4, 5, 7, .74);
+  --kov-radius: 28px;
+  --kov-width: min(1100px, 92vw);
+  --kov-pad: clamp(24px, 4.2vw, 56px);
+  --kov-ease: cubic-bezier(.2, .8, .2, 1);
+  --kov-dur: 240ms;
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  opacity: 0;
+  transition: opacity var(--kov-dur) var(--kov-ease);
+}
+.kov[hidden] { display: none; }
+.kov.is-open { opacity: 1; }
+.kov__scrim {
+  position: absolute;
+  inset: 0;
+  background: var(--kov-scrim);
+  -webkit-backdrop-filter: blur(10px) saturate(115%);
+  backdrop-filter: blur(10px) saturate(115%);
+}
+.kov__panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: var(--kov-width);
+  max-height: calc(100vh - 64px);
+  max-height: calc(100dvh - 64px);
+  background: var(--kov-bg);
+  color: var(--kov-fg);
+  border: 1px solid var(--kov-line);
+  border-radius: var(--kov-radius);
+  box-shadow: 0 40px 120px -20px rgba(0, 0, 0, .7), 0 0 0 1px rgba(0, 0, 0, .4);
+  overflow: hidden;
+  outline: none;
+  transform: translateY(10px) scale(.965);
+  transition: transform var(--kov-dur) var(--kov-ease);
+}
+.kov.is-open .kov__panel { transform: none; }
+.kov--narrow .kov__panel { --kov-width: min(680px, 92vw); }
+.kov__body {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: var(--kov-pad);
+  padding-top: max(var(--kov-pad), 64px);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, .2) transparent;
+}
+.kov__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .08);
+  color: var(--kov-fg);
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  transition: background-color .16s ease, transform .16s ease;
+}
+.kov__close:hover { background: rgba(255, 255, 255, .16); }
+.kov__close:active { transform: scale(.94); }
+.kov__close:focus-visible { outline: 2px solid var(--kov-accent); outline-offset: 2px; }
+.kov__close svg { width: 18px; height: 18px; }
+
+/* phone: full-screen sheet */
+@media (max-width: 640px) {
+  .kov { padding: 0; place-items: end stretch; }
+  .kov__panel {
+    width: 100%;
+    height: calc(100vh - 10px);
+    height: calc(100dvh - max(10px, env(safe-area-inset-top)));
+    max-height: none;
+    border-radius: 22px 22px 0 0;
+    border-width: 1px 0 0;
+    transform: translateY(28px);
+  }
+  .kov__body { padding: 64px 20px calc(32px + env(safe-area-inset-bottom)); }
+  .kov__close { top: 10px; right: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kov { --kov-dur: 120ms; }
+  .kov__panel, .kov.is-open .kov__panel { transform: none; transition: none; }
+}

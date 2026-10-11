@@ -1,0 +1,94 @@
+/*! LineApp R2 kit · compare.css · before/after slider (pairs with compare.js) */
+.kcmp {
+  --kcmp-accent: #C7E635;
+  --kcmp-ink: #0B0C0E;
+  --kcmp-line: #fff;
+  --kcmp-radius: 24px;
+  --kcmp-dur: 0ms;
+  --kcmp-ease: cubic-bezier(.2, .8, .2, 1);
+  --pos: 50%;
+  position: relative;
+  display: grid;
+  border-radius: var(--kcmp-radius);
+  overflow: hidden;
+  isolation: isolate;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: ew-resize;
+}
+.kcmp > .kcmp__a, .kcmp > .kcmp__b { grid-area: 1 / 1; min-width: 0; transition: clip-path var(--kcmp-dur) var(--kcmp-ease); }
+/* a = shown when the handle is fully LEFT (default "Us"); b = shown when fully RIGHT (default "Industry") */
+.kcmp > .kcmp__a { clip-path: inset(0 0 0 var(--pos)); }
+.kcmp > .kcmp__b { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.kcmp img { -webkit-user-drag: none; pointer-events: none; }
+
+.kcmp__handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--pos);
+  z-index: 3;
+  width: 0;
+  transition: left var(--kcmp-dur) var(--kcmp-ease);
+}
+.kcmp__handle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  width: 2px;
+  background: var(--kcmp-line);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .18), 0 0 24px rgba(0, 0, 0, .35);
+}
+.kcmp__knob {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  margin: -24px 0 0 -24px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--kcmp-accent);
+  color: var(--kcmp-ink);
+  box-shadow: 0 10px 30px -6px rgba(0, 0, 0, .55), 0 0 0 4px rgba(11, 12, 14, .35);
+  cursor: grab;
+  outline: none;
+  transition: transform .18s var(--kcmp-ease), box-shadow .18s ease;
+}
+.kcmp__knob svg { width: 26px; height: 26px; }
+.kcmp:hover .kcmp__knob { transform: scale(1.05); }
+.kcmp.is-dragging, .kcmp.is-dragging .kcmp__knob { cursor: grabbing; }
+.kcmp.is-dragging .kcmp__knob { transform: scale(.94); }
+.kcmp__knob:focus-visible { box-shadow: 0 10px 30px -6px rgba(0, 0, 0, .55), 0 0 0 3px var(--kcmp-ink), 0 0 0 6px var(--kcmp-accent); }
+
+.kcmp__label {
+  position: absolute;
+  top: 16px;
+  z-index: 2;
+  padding: 7px 12px 7px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .01em;
+  pointer-events: none;
+  transition: opacity .22s ease;
+}
+.kcmp__label--a { right: 16px; background: var(--kcmp-accent); color: var(--kcmp-ink); }
+.kcmp__label--b { left: 16px; background: rgba(255, 255, 255, .92); color: var(--kcmp-ink); }
+
+@media (max-width: 640px) {
+  .kcmp__label { top: 12px; font-size: 12px; padding: 6px 10px; }
+  .kcmp__label--a { right: 12px; }
+  .kcmp__label--b { left: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kcmp { --kcmp-dur: 0ms !important; }
+  .kcmp__knob { transition: none; }
+}

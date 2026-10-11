@@ -1,0 +1,61 @@
+/* LineApp R3 kit · tickets.css — ticket strip, quote panel, and the one-baseline numbers row */
+.ktix { --ktix-accent: #C7E635; --ktix-ink: #0B0C0E; --ktix-card: #16181B; --ktix-notch: 9px; --ktix-bg: #0B0C0E; color: #fff; min-width: 0; max-width: 100%; }
+.ktix__strip { display: flex; flex-wrap: wrap; gap: 12px; min-width: 0; }
+.ktix__t { position: relative; display: grid; grid-template-columns: 1fr auto; align-items: stretch; min-width: 200px; height: 92px; padding: 0; border: 0; cursor: pointer;
+  background: none; color: #fff; font: inherit; text-align: left; filter: drop-shadow(0 12px 22px rgba(0, 0, 0, .35));
+  transition: transform .3s cubic-bezier(.2, .8, .2, 1); -webkit-tap-highlight-color: transparent; }
+.ktix__t:hover { transform: translateY(-3px); }
+.ktix__t:active { transform: translateY(-1px) scale(.99); }
+.ktix__t:focus-visible { outline: 2px solid var(--ktix-accent); outline-offset: 4px; border-radius: 12px; }
+/* two clean halves, cut with round notches at the tear line (no dots, no dashes) */
+.ktix__main, .ktix__stub { position: relative; display: flex; align-items: center; background: var(--ktix-card); transition: background-color .3s ease, color .3s ease; }
+.ktix__main { gap: 14px; padding: 0 20px; border-radius: 12px 0 0 12px;
+  -webkit-mask: radial-gradient(circle var(--ktix-notch) at 100% 0, #0000 98%, #000) top / 100% 51% no-repeat, radial-gradient(circle var(--ktix-notch) at 100% 100%, #0000 98%, #000) bottom / 100% 51% no-repeat;
+          mask: radial-gradient(circle var(--ktix-notch) at 100% 0, #0000 98%, #000) top / 100% 51% no-repeat, radial-gradient(circle var(--ktix-notch) at 100% 100%, #0000 98%, #000) bottom / 100% 51% no-repeat; }
+.ktix__stub { justify-content: center; min-width: 64px; padding: 0 14px; border-radius: 0 12px 12px 0; margin-left: 1.5px;
+  -webkit-mask: radial-gradient(circle var(--ktix-notch) at 0 0, #0000 98%, #000) top / 100% 51% no-repeat, radial-gradient(circle var(--ktix-notch) at 0 100%, #0000 98%, #000) bottom / 100% 51% no-repeat;
+          mask: radial-gradient(circle var(--ktix-notch) at 0 0, #0000 98%, #000) top / 100% 51% no-repeat, radial-gradient(circle var(--ktix-notch) at 0 100%, #0000 98%, #000) bottom / 100% 51% no-repeat;
+  font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: rgba(255, 255, 255, .55); }
+.ktix__stub > span { writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; }
+.ktix__main img { display: block; height: 30px; width: auto; max-width: 128px; object-fit: contain; transition: filter .3s ease; }
+.ktix__label { display: grid; gap: 2px; font-size: 13px; color: rgba(255, 255, 255, .6); line-height: 1.25; }
+.ktix__label b { font-size: 15px; color: #fff; font-weight: 750; }
+.ktix__t.is-on .ktix__main, .ktix__t.is-on .ktix__stub { background: var(--ktix-accent); color: var(--ktix-ink); }
+.ktix__t.is-on .ktix__label, .ktix__t.is-on .ktix__label b { color: var(--ktix-ink); }
+.ktix__t.is-on .ktix__main img { filter: brightness(0); }
+.ktix__t.is-on .ktix__main img.keep { filter: none; }
+.ktix__t.is-on { transform: translateY(-4px); }
+/* auto-advance progress, only while it runs by itself */
+.ktix__t::after { content: ""; position: absolute; left: 14px; right: 80px; bottom: 10px; height: 2px; border-radius: 2px; background: rgba(11, 12, 14, .35); transform-origin: 0 50%; transform: scaleX(0); opacity: 0; }
+.ktix.is-ticking .ktix__t.is-on::after { opacity: 1; animation: ktix-prog var(--ktix-interval, 6000ms) linear forwards; }
+.ktix.is-paused .ktix__t.is-on::after { animation-play-state: paused; }
+@keyframes ktix-prog { to { transform: scaleX(1); } }
+
+.ktix__panel { outline: none; margin: 0; }
+.ktix__panel[hidden] { display: none; }
+.ktix__panel:focus-visible { outline: 2px solid var(--ktix-accent); outline-offset: 6px; border-radius: 8px; }
+.ktix__panel blockquote { margin: 0; font-size: clamp(24px, 3vw, 40px); line-height: 1.18; letter-spacing: -.02em; font-weight: 700; max-width: 26ch; }
+.ktix__panel figcaption { display: flex; align-items: center; gap: 14px; margin-top: 24px; font-size: 15px; color: rgba(255, 255, 255, .7); }
+.ktix__panel figcaption img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+.ktix__panel figcaption b { display: block; color: #fff; font-weight: 750; }
+
+@media (max-width: 640px) {
+  .ktix__strip { flex-wrap: nowrap; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 2px 14px; margin: -6px -2px 0; scrollbar-width: none; }
+  .ktix__strip::-webkit-scrollbar { display: none; }
+  .ktix__t { flex: none; scroll-snap-align: start; min-width: 176px; height: 80px; }
+  .ktix__main img { height: 24px; max-width: 96px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ktix__t, .ktix__main, .ktix__stub, .ktix__main img { transition: none; }
+  .ktix__t:hover, .ktix__t.is-on { transform: none; }
+}
+
+/* ---------- numbers on one baseline ----------
+   <div class="knum-row"><div class="knum"><b>30<small>+</small></b><span>festivals</span></div> … </div>
+   The numbers share row 1 (aligned on their last baseline), labels share row 2, so label length never pushes a number. */
+.knum-row { display: grid; grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr)); grid-template-rows: auto auto; column-gap: clamp(16px, 3vw, 48px); row-gap: 10px; }
+.knum { display: grid; grid-row: span 2; grid-template-rows: subgrid; align-items: last baseline; }
+.knum > b { font-size: clamp(44px, 6vw, 88px); font-weight: 850; letter-spacing: -.04em; line-height: .9; font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; align-self: end; }
+.knum > b small { font-size: .5em; letter-spacing: -.01em; margin-left: .04em; vertical-align: baseline; font-weight: 800; }
+.knum > span { align-self: start; font-size: 15px; line-height: 1.4; color: rgba(255, 255, 255, .7); max-width: 22ch; }
+@media (max-width: 520px) { .knum-row { column-gap: 12px; } .knum > b { font-size: 40px; } .knum > span { font-size: 13px; } }

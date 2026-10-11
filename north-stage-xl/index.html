@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LineApp · For festivals of 40,000 and more</title>
+<meta name="description" content="Your festival's own app for three days and 40,000 people: the line-up, a live map, one push to every phone with the app, and a sponsor package that pays for the app and pays you the same again.">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/perf-singer-green.jpg" fetchpriority="high">
+<link rel="stylesheet" href="assets/kit/overlay.css">
+<link rel="stylesheet" href="assets/kit/compare.css">
+<link rel="stylesheet" href="assets/kit/marquee.css">
+<link rel="stylesheet" href="assets/kit/calculator.css">
+<link rel="stylesheet" href="assets/kit/printer.css">
+<link rel="stylesheet" href="assets/kit/journey.css">
+<link rel="stylesheet" href="assets/kit/expand.css">
+<link rel="stylesheet" href="assets/kit/tickets.css">
+<link rel="stylesheet" href="assets/kit/orbit.css">
+<link rel="stylesheet" href="assets/kit/marks2.css">
+<link rel="stylesheet" href="assets/kit/consent3.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo" viewBox="0 -730 4060 940" fill="currentColor"><circle cx="112" cy="-648" r="66"/><path d="M60 -520H164V-70Q164 -30 200 -16L214 0H10L24 -16Q60 -30 60 -70Z"/><circle cx="548" cy="-648" r="66"/><path d="M496 -520H600V-70Q600 -30 636 -16L650 0H446L460 -16Q496 -30 496 -70Z"/><path d="M128 -500C220 -380 440 -380 532 -500" fill="none" stroke="currentColor" stroke-width="80" stroke-linecap="round"/><path transform="translate(800 0)" d="M64 0V-700H169V0Z M292 0V-500H397V0ZM345 -599Q320 -599 301 -618Q283 -637 283 -662Q283 -688 301 -706Q320 -724 345 -724Q371 -724 389 -706Q407 -688 407 -662Q407 -637 389 -618Q371 -599 345 -599Z M522 0V-500H620L625 -428Q649 -469 688 -490Q727 -512 778 -512Q837 -512 880 -488Q922 -464 946 -414Q969 -363 968 -282V0H864V-256Q864 -319 849 -353Q834 -387 809 -400Q783 -414 750 -414Q691 -415 659 -375Q627 -335 627 -260V0Z M1297 12Q1224 12 1167 -22Q1111 -55 1079 -114Q1047 -173 1047 -250Q1047 -327 1079 -386Q1112 -445 1169 -478Q1226 -512 1299 -512Q1367 -512 1421 -478Q1474 -443 1504 -379Q1535 -315 1535 -226H1155Q1160 -159 1202 -120Q1245 -82 1306 -82Q1353 -82 1385 -104Q1416 -125 1434 -160L1526 -120Q1506 -79 1473 -50Q1441 -20 1397 -4Q1353 12 1297 12ZM1161 -307H1422Q1419 -345 1401 -370Q1382 -395 1355 -408Q1328 -422 1297 -422Q1267 -422 1237 -409Q1207 -396 1186 -370Q1165 -345 1161 -307Z M1775 12Q1686 12 1636 -28Q1587 -68 1587 -141Q1587 -219 1639 -259Q1691 -300 1784 -300H1914Q1908 -359 1882 -389Q1855 -420 1804 -420Q1767 -420 1740 -404Q1712 -389 1693 -356L1601 -390Q1617 -424 1644 -451Q1671 -479 1710 -496Q1750 -512 1804 -512Q1877 -512 1925 -484Q1973 -456 1996 -402Q2020 -349 2019 -274L2017 0H1920L1917 -63Q1897 -27 1861 -7Q1825 12 1775 12ZM1787 -77Q1825 -77 1854 -94Q1884 -111 1900 -140Q1916 -169 1916 -207V-218H1816Q1748 -218 1721 -199Q1693 -179 1693 -143Q1693 -112 1718 -95Q1743 -77 1787 -77Z M2131 200V-500H2229L2234 -422Q2261 -464 2302 -488Q2343 -512 2396 -512Q2464 -512 2515 -479Q2565 -447 2594 -388Q2622 -329 2622 -250Q2622 -172 2594 -112Q2565 -53 2515 -21Q2464 12 2396 12Q2343 12 2303 -11Q2262 -35 2236 -76V200ZM2370 -84Q2412 -84 2445 -105Q2477 -126 2495 -164Q2514 -201 2514 -250Q2514 -299 2496 -336Q2478 -374 2446 -395Q2413 -416 2371 -416Q2332 -416 2301 -395Q2270 -374 2253 -336Q2236 -299 2236 -250Q2236 -201 2253 -164Q2270 -126 2301 -105Q2331 -84 2370 -84Z M2717 200V-500H2815L2820 -422Q2847 -464 2888 -488Q2929 -512 2982 -512Q3050 -512 3101 -479Q3151 -447 3180 -388Q3208 -329 3208 -250Q3208 -172 3180 -112Q3151 -53 3101 -21Q3050 12 2982 12Q2929 12 2889 -11Q2848 -35 2822 -76V200ZM2956 -84Q2998 -84 3031 -105Q3063 -126 3081 -164Q3100 -201 3100 -250Q3100 -299 3082 -336Q3064 -374 3032 -395Q2999 -416 2957 -416Q2918 -416 2887 -395Q2856 -374 2839 -336Q2822 -299 2822 -250Q2822 -201 2839 -164Q2856 -126 2887 -105Q2917 -84 2956 -84Z"/></symbol>
+    <symbol id="mark" viewBox="0 0 64 32"><circle cx="10" cy="7" r="3.2" fill="currentColor"/><rect x="8.6" y="9" width="2.8" height="19" rx="1.4" fill="currentColor"/><circle cx="54" cy="7" r="3.2" fill="currentColor"/><rect x="52.6" y="9" width="2.8" height="19" rx="1.4" fill="currentColor"/><path d="M12 12 C 26 24, 38 24, 52 12" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="i-disc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.5 8.5l-2 5-5 2 2-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-line" viewBox="0 0 24 24"><path d="M4 6h11M4 11h11M4 16h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M18 5v10.5a2.5 2.5 0 1 1-2-2.45" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M3.5 6.5l5.5-2 6 2 5.5-2v13l-5.5 2-6-2-5.5 2z M9 4.5v13 M15 6.5v13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-me" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 20c1.2-3.8 4-5.5 7.5-5.5s6.3 1.7 7.5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-sig" viewBox="0 0 54 12"><rect x="0" y="8" width="3" height="4" rx="1" fill="currentColor"/><rect x="5" y="6" width="3" height="6" rx="1" fill="currentColor"/><rect x="10" y="3" width="3" height="9" rx="1" fill="currentColor"/><rect x="15" y="0" width="3" height="12" rx="1" fill="currentColor"/><rect x="28" y="1" width="22" height="10" rx="3" fill="none" stroke="currentColor" stroke-opacity=".5"/><rect x="30" y="3" width="15" height="6" rx="1.5" fill="currentColor"/><rect x="51" y="4" width="2" height="4" rx="1" fill="currentColor" fill-opacity=".5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-open" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-8 8M17 14v4.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 4 18.5v-10A1.5 1.5 0 0 1 5.5 7H10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="halden" viewBox="0 0 120 120"><defs><clipPath id="hcl"><circle cx="60" cy="60" r="50"/></clipPath></defs><circle cx="60" cy="60" r="60" fill="#C9733A"/><circle cx="60" cy="60" r="53.5" fill="none" stroke="#F4E7D3" stroke-width="2.6"/><g clip-path="url(#hcl)" fill="none" stroke="#F4E7D3" stroke-linecap="round"><circle cx="44" cy="45" r="10.5" fill="#F4E7D3" stroke="none"/><path d="M4 82 C34 74 64 58 116 34" stroke-width="7.5"/><path d="M4 97 C38 88 70 74 116 56" stroke-width="7.5"/><path d="M4 112 C42 103 76 92 116 78" stroke-width="7.5"/></g></symbol>
+    <symbol id="laurel" viewBox="0 0 60 120"><g fill="currentColor"><path d="M44 116 C 20 100, 8 76, 10 44 C 11 28, 16 16, 22 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><ellipse cx="14" cy="96" rx="9" ry="4.5" transform="rotate(-38 14 96)"/><ellipse cx="30" cy="96" rx="9" ry="4.5" transform="rotate(40 30 96)"/><ellipse cx="6" cy="78" rx="9" ry="4.5" transform="rotate(-62 6 78)"/><ellipse cx="22" cy="74" rx="9" ry="4.5" transform="rotate(22 22 74)"/><ellipse cx="2" cy="58" rx="9" ry="4.5" transform="rotate(-80 2 58)"/><ellipse cx="18" cy="54" rx="9" ry="4.5" transform="rotate(10 18 54)"/><ellipse cx="4" cy="38" rx="9" ry="4.5" transform="rotate(-100 4 38)"/><ellipse cx="20" cy="34" rx="9" ry="4.5" transform="rotate(0 20 34)"/><ellipse cx="12" cy="18" rx="8" ry="4" transform="rotate(-118 12 18)"/><ellipse cx="26" cy="16" rx="8" ry="4" transform="rotate(-20 26 16)"/></g></symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.3L12 17.1l-5.7 3.1 1.2-6.3-4.7-4.4 6.4-.8z" fill="currentColor"/></symbol>
+
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M14.5 5.5L8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 3.5v11M8 7.5l4-4 4 4M6 11.5v7a1.5 1.5 0 0 0 1.5 1.5h9a1.5 1.5 0 0 0 1.5-1.5v-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-replay" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4v4h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="p-gate" viewBox="0 0 120 64"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M50 58V14h20v44M50 22h20"/><path d="M44 58h32" stroke-opacity=".4"/></g><g fill="#C7E635"><circle cx="12" cy="22" r="3.2"/><circle cx="20" cy="22" r="3.2"/><circle cx="28" cy="22" r="3.2"/><circle cx="36" cy="22" r="3.2"/><circle cx="12" cy="31" r="3.2"/><circle cx="20" cy="31" r="3.2"/><circle cx="28" cy="31" r="3.2"/><circle cx="36" cy="31" r="3.2"/><circle cx="12" cy="40" r="3.2"/><circle cx="20" cy="40" r="3.2"/><circle cx="28" cy="40" r="3.2"/><circle cx="36" cy="40" r="3.2"/><circle cx="12" cy="49" r="3.2"/><circle cx="20" cy="49" r="3.2"/><circle cx="28" cy="49" r="3.2"/><circle cx="36" cy="49" r="3.2"/></g><g fill="currentColor" fill-opacity=".45"><circle cx="86" cy="40" r="3.2"/><circle cx="95" cy="40" r="3.2"/><circle cx="104" cy="40" r="3.2"/><circle cx="86" cy="49" r="3.2"/></g></symbol>
+    <symbol id="p-app" viewBox="0 0 120 64"><rect x="44" y="4" width="32" height="58" rx="7" fill="none" stroke="currentColor" stroke-width="2"/><rect x="51" y="20" width="18" height="18" rx="5" fill="#C7E635"/><path d="M54 27c2 3 10 3 12 0" stroke="#0b0b0d" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="55" cy="25" r="1.5" fill="#0b0b0d"/><circle cx="65" cy="25" r="1.5" fill="#0b0b0d"/><rect x="54" y="8" width="12" height="3" rx="1.5" fill="currentColor" fill-opacity=".5"/></symbol>
+    <symbol id="p-lockers" viewBox="0 0 120 64"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="16" y="8" width="16" height="22" rx="3"/><rect x="34" y="8" width="16" height="22" rx="3"/><rect x="52" y="8" width="16" height="22" rx="3"/><rect x="70" y="8" width="16" height="22" rx="3"/><rect x="88" y="8" width="16" height="22" rx="3"/><rect x="16" y="34" width="16" height="22" rx="3"/><rect x="34" y="34" width="16" height="22" rx="3"/><rect x="52" y="34" width="16" height="22" rx="3"/><rect x="70" y="34" width="16" height="22" rx="3"/><rect x="88" y="34" width="16" height="22" rx="3"/></g><g fill="#C7E635" fill-opacity=".85"><rect x="16" y="8" width="16" height="22" rx="3"/><rect x="34" y="8" width="16" height="22" rx="3"/><rect x="52" y="8" width="16" height="22" rx="3"/><rect x="70" y="8" width="16" height="22" rx="3"/><rect x="88" y="8" width="16" height="22" rx="3"/><rect x="16" y="34" width="16" height="22" rx="3"/><rect x="34" y="34" width="16" height="22" rx="3"/><rect x="52" y="34" width="16" height="22" rx="3"/><rect x="70" y="34" width="16" height="22" rx="3"/></g><g fill="#0b0b0d"><rect x="22" y="17" width="4" height="2" rx="1"/><rect x="40" y="17" width="4" height="2" rx="1"/><rect x="58" y="17" width="4" height="2" rx="1"/><rect x="76" y="17" width="4" height="2" rx="1"/><rect x="94" y="17" width="4" height="2" rx="1"/><rect x="22" y="43" width="4" height="2" rx="1"/><rect x="40" y="43" width="4" height="2" rx="1"/><rect x="58" y="43" width="4" height="2" rx="1"/><rect x="76" y="43" width="4" height="2" rx="1"/></g></symbol>
+    <symbol id="p-coins" viewBox="0 0 120 64"><g><ellipse cx="74" cy="54" rx="16" ry="5" fill="#9fb82a"/><rect x="58" y="34" width="32" height="20" fill="#9fb82a"/><ellipse cx="74" cy="34" rx="16" ry="5" fill="#C7E635"/><ellipse cx="96" cy="56" rx="12" ry="4" fill="#9fb82a"/><rect x="84" y="46" width="24" height="10" fill="#9fb82a"/><ellipse cx="96" cy="46" rx="12" ry="4" fill="#C7E635"/></g><circle cx="30" cy="32" r="22" fill="#C9733A"/><circle cx="30" cy="32" r="18.5" fill="none" stroke="#F4E7D3" stroke-width="1.6"/><circle cx="24" cy="26" r="4.5" fill="#F4E7D3"/><path d="M12 42c8-2 16-6 34-13M12 48c9-2 18-5 34-11" stroke="#F4E7D3" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="p-switch" viewBox="0 0 120 64"><rect x="44" y="4" width="32" height="58" rx="7" fill="none" stroke="currentColor" stroke-width="2"/><rect x="49" y="28" width="22" height="12" rx="6" fill="#C7E635"/><circle cx="65" cy="34" r="4.5" fill="#0b0b0d"/><rect x="49" y="14" width="22" height="3" rx="1.5" fill="currentColor" fill-opacity=".5"/><rect x="49" y="46" width="15" height="3" rx="1.5" fill="currentColor" fill-opacity=".5"/></symbol>
+    <symbol id="p-queue" viewBox="0 0 120 64"><g stroke-linecap="round" stroke-width="7"><path d="M14 14H44" stroke="#C7E635"/><path d="M14 32H82" stroke="currentColor" stroke-opacity=".5"/><path d="M14 50H104" stroke="currentColor" stroke-opacity=".3"/></g></symbol>
+    <symbol id="p-cloud" viewBox="0 0 24 24"><path d="M7 17h10a4 4 0 0 0 .4-8A5.5 5.5 0 0 0 7 10a3.5 3.5 0 0 0 0 7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#form">Skip to the form</a>
+
+<!-- Nav: hides on the way down, returns on the way up (kit header). The lime button lives in the bar. -->
+<header class="nav" id="nav" data-header data-header-offset="120">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="LineApp, back to the top"><svg viewBox="0 0 4060 940" aria-hidden="true"><use href="#logo"/></svg></a>
+    <nav class="links" aria-label="Sections">
+      <a href="#sponsors">Sponsors</a><a href="#day">The day</a><a href="#data">Your data</a><a href="#people">For the people</a><a href="#partners">Who uses it</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="size" role="group" aria-label="Your festival size">
+      <span class="size-l">Your festival</span>
+      <a href="../field-notes-s/index.html">up to 10k</a><a href="../confetti-club-m/index.html">10–40k</a><a href="../north-stage-xl/index.html" aria-current="page">40k+</a>
+    </div>
+    <span class="nav-spacer" aria-hidden="true"></span>
+    <a class="btn btn-lime nav-cta" href="#form">Generate your app</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Sections">
+    <a href="#sponsors">Sponsors</a><a href="#day">The day</a><a href="#data">Your data</a><a href="#people">For the people</a><a href="#partners">Who uses it</a><a href="#faq">FAQ</a><a href="#form">Generate your app</a>
+  </nav>
+  <div class="size size-m" role="group" aria-label="Your festival size">
+    <span class="size-l">Your festival</span>
+    <a href="../field-notes-s/index.html">up to 10k</a><a href="../confetti-club-m/index.html">10–40k</a><a href="../north-stage-xl/index.html" aria-current="page">40k+</a>
+  </div>
+</div>
+<!-- phones: a docked lime button after the hero -->
+<a class="dock" id="dock" href="#form"><span>Generate your app</span><small>demo in 24 h</small></a>
+
+<main>
+<!-- ===================== 01 · Hero + kabum: the show goes into the phone ===================== -->
+<section class="hero" id="top" aria-label="Festival apps were boring. Until today.">
+  <div class="hero-vp" id="heroVp">
+    <div class="h-photo" id="hPhoto" aria-hidden="true">
+      <img id="hImg" src="assets/img/perf-singer-green.jpg" width="2000" height="1116" alt="" data-ph="photo" fetchpriority="high" decoding="async">
+      <div class="h-shade" id="hShade"></div>
+    </div>
+
+    <div class="h-text wrap">
+      <div class="h-copy" id="hCopy">
+        <p class="kicker"><span class="dot" aria-hidden="true"></span><span data-ph="number">For festivals of 40,000 and more · three days · camping</span></p>
+        <h1>Festival apps<br>were boring. <span class="l">Until today.</span></h1>
+        <p class="sub">Your festival’s own app for three days and <span data-ph="number">40,000</span> people. The line-up, a live map, one push to every phone with the app, and a sponsor package that pays for all of it.</p>
+        <div class="act">
+          <a class="btn btn-lime btn-lg" href="#form">Generate your app</a>
+          <span class="small">Festival name and e-mail. Your branded demo lands within 24 hours.</span>
+        </div>
+      </div>
+
+      <div class="h-kab" id="hKab" aria-hidden="true">
+        <p class="eyebrow">Friday night · Main Stage</p>
+        <h2 class="kab-h">The lights go down. <span>Your phone lights up.</span></h2>
+        <ol class="beats" id="beats">
+          <li class="beat" data-beat="0"><time>23:13</time><p><b>Ellis Rook in two minutes.</b> Main Stage, <span data-ph="number">600</span> metres from you.</p></li>
+          <li class="beat" data-beat="1"><time>23:14</time><p><b>Five of your crew, left of the sound desk.</b> One’s still at the East bar. The map points you both in.</p></li>
+          <li class="beat" data-beat="2"><time>23:15</time><p><b>Phone away.</b> Forty thousand people, and you found your five.</p></li>
+        </ol>
+        <p class="kab-f" data-ph="person">Ellis Rook is an example artist. Your line-up goes here.</p>
+      </div>
+    </div>
+
+    <!-- the phone: the real artist screen, rebuilt around the same photo -->
+    <div class="hp" id="hp" data-beat="0">
+      <div class="hp-dim" id="hpDim"></div>
+      <div class="hp-ui" id="hpUi">
+        <div class="hp-stat"><span id="hpClock">23:13</span><svg aria-hidden="true"><use href="#i-sig"/></svg></div>
+        <div class="hp-isl"></div>
+        <div class="hp-topbtn"><span class="rb"><svg aria-hidden="true"><use href="#i-back"/></svg></span><span class="hp-fest" data-ph="logo"><svg aria-hidden="true"><use href="#mark"/></svg>Your festival</span><span class="rb"><svg aria-hidden="true"><use href="#i-share"/></svg></span></div>
+
+        <div class="hp-art">
+          <p class="hp-eye"><span class="st-soon">Main Stage · in 2 min</span><span class="st-live">Playing now · Main Stage</span></p>
+          <p class="hp-name" data-ph="person">Ellis Rook</p>
+          <p class="hp-meta"><span class="hp-badge"><span class="st-soon">Your set</span><span class="st-live"><i></i>Live</span></span><span>Indie rock · live band</span></p>
+          <div class="hp-when"><b>23:15</b><span><span class="st-soon hl">in 2 min · 600 m away</span><span class="st-live hl">on now · until 00:30</span><small>75 min · plays once this weekend</small></span></div>
+          <div class="acts" id="hpActs" role="group" aria-label="Your plan for Ellis Rook">
+            <button type="button" class="ab" id="goingBtn" aria-pressed="false" data-confetti="pressed" data-confetti-count="110">Going</button>
+            <button type="button" class="ab" aria-pressed="false">Maybe</button>
+            <button type="button" class="ab" aria-pressed="false">Skip</button>
+          </div>
+          <div class="hp-player">
+            <span class="pa-art"></span>
+            <span class="pa-t"><b><span class="st-soon">Preview · Ellis Rook</span><span class="st-live">Main Stage · live now</span></b><small><span class="st-soon">Your set tonight · 23:15</span><span class="st-live">Ellis Rook · set 0:42 of 75 min</span></small></span>
+            <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="pa-bar"><i></i></span>
+          </div>
+        </div>
+
+        <!-- beat 1 · the push -->
+        <div class="hp-note" aria-hidden="true">
+          <span class="ic"><svg aria-hidden="true"><use href="#mark"/></svg></span>
+          <span class="nt"><small>Your festival <i>now</i></small><b>Ellis Rook in two minutes</b>Main Stage, 600 m from you. Tap Going and we’ll guide you in.</span>
+        </div>
+
+        <!-- beat 2 · the map with your crew -->
+        <div class="hp-map" aria-hidden="true">
+          <img src="assets/img/terrain-XL-3x4.jpg" alt="" loading="lazy" decoding="async">
+          <div class="mp-shade"></div>
+          <div class="mp-top"><b>Map</b><span class="mp-chip"><i></i>Main Stage · 23:15</span></div>
+          <span class="mp-stage">Main Stage<small>Ellis Rook · next</small></span>
+          <span class="mp-desk">sound desk</span>
+          <span class="cm c1">🌹</span><span class="cm c2">🦊</span><span class="cm c3">🐙</span><span class="cm c4">🌻</span><span class="cm c5">⚡️</span>
+          <span class="crew-l">Your crew · 5 here</span>
+          <svg class="mp-route" viewBox="0 0 390 844" aria-hidden="true"><path d="M206 660 C 200 600, 168 560, 168 492"/><path class="r2" d="M372 470 C 320 470, 240 470, 190 488"/></svg>
+          <span class="me">You</span>
+          <span class="edge">🦌 Maja · East bar<b>140 m →</b></span>
+          <div class="mp-sheet"><small>Your crew</small><b>5 together · 1 at the East bar</b><span class="mp-btn">Show us the way</span></div>
+        </div>
+
+        <div class="hp-tabs" aria-hidden="true"><span class="t-d"><svg><use href="#i-disc"/></svg>Discover</span><span class="t-l"><svg><use href="#i-line"/></svg>Line-up</span><span class="t-m"><svg><use href="#i-map"/></svg>Map</span><span><svg><use href="#i-me"/></svg>Me</span></div>
+        <div class="hp-home"></div>
+      </div>
+      <div class="hp-glass"></div>
+    </div>
+
+    <p class="scroll-cue" id="scrollCue"><i></i>Scroll. The show goes into the phone.</p>
+  </div>
+</section>
+
+<!-- ===================== 02 · Proof: tickets switch the quote ===================== -->
+<section class="sec proof" id="proof" aria-labelledby="proof-h">
+  <div class="wrap">
+    <p class="eyebrow">Who uses it</p>
+    <h2 class="h2 proof-h" id="proof-h">Already on the field. <span class="g">Big ones, small ones, very old ones.</span></h2>
+    <p class="tix-hint"><span class="m-hide">Tap a ticket. Read what that festival said.</span><span class="m-show">Tap a ticket.</span></p>
+    <div class="tix" data-tickets data-interval="6000" data-label="Festivals that use LineApp">
+      <div class="ktix__strip" data-ph="consent">
+        <button data-ticket="off"><span class="ktix__main"><img src="assets/partners/logos/off-festival.png" alt="" loading="lazy"><span class="ktix__label"><b>OFF Festival</b>since 2006</span></span><span class="ktix__stub"><span>Admit one</span></span></button>
+        <button data-ticket="fkz"><span class="ktix__main"><img src="assets/partners/logos/fkz-lion.png" alt="" loading="lazy" class="lion"><span class="ktix__label"><b>Jewish Culture Festival</b>since 1988</span></span><span class="ktix__stub"><span>Admit one</span></span></button>
+        <button data-ticket="malta"><span class="ktix__main"><img src="assets/partners/logos/malta-festival.png" alt="" loading="lazy"><span class="ktix__label"><b>Malta Festival</b>since 1991</span></span><span class="ktix__stub"><span>Admit one</span></span></button>
+        <button data-ticket="pr"><span class="ktix__main"><img src="assets/partners/logos/polandrock.png" alt="" loading="lazy"><span class="ktix__label"><b>Pol’and’Rock</b>since 1995</span></span><span class="ktix__stub"><span>Admit all</span></span></button>
+        <button data-ticket="sbm"><span class="ktix__main"><img src="assets/partners/logos/sbm-ffestival.png" alt="" loading="lazy"><span class="ktix__label"><b>SBM FFestival</b>hip-hop, Warsaw</span></span><span class="ktix__stub"><span>Admit one</span></span></button>
+      </div>
+      <div class="tix-panels">
+        <figure data-ticket-panel="off" data-ph="consent"><blockquote>“Prepared at a frantic pace, and the project presented drew our attention by its superiority to similar ones.”</blockquote><figcaption><img src="assets/partners/photos/artur-rojek-square-331.jpg" alt="" loading="lazy"><span><b>Artur Rojek</b>Director, OFF Festival</span></figcaption></figure>
+        <figure data-ticket-panel="fkz" data-ph="consent"><blockquote>“Their reliability, patience and, above all, their professionalism make LineApp a company you want to work with.”</blockquote><figcaption><img src="assets/partners/photos/janusz-makuch-252.png" alt="" loading="lazy"><span><b>Janusz Makuch</b>Director, Jewish Culture Festival</span></figcaption></figure>
+        <figure data-ticket-panel="malta" data-ph="consent"><blockquote>“What truly stood out was the app’s user-friendly interface and intuitive client dashboard.”</blockquote><figcaption><img src="assets/partners/photos/michal-merczynski-400.jpg" alt="" loading="lazy"><span><b>Michał Merczyński</b>Festival director 1991–2023, Malta Festival Poznań</span></figcaption></figure>
+        <figure data-ticket-panel="pr" data-ph="quote"><blockquote>“The app became the one line we have to every person on the field.”</blockquote><figcaption><span><b>Paweł T. · placeholder name</b>Temporary quote, to be replaced with Pol’and’Rock’s own words</span></figcaption></figure>
+        <figure data-ticket-panel="sbm" data-ph="quote"><blockquote>“We sent one push to an empty zone. Three minutes later it was full.”</blockquote><figcaption><span><b>Norbert T. · placeholder name</b>Temporary quote, needs SBM’s consent</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="knum-row proof-nums">
+      <div class="knum"><b data-ph="number">30<small>+</small></b><span>festivals have run on LineApp</span></div>
+      <div class="knum"><b data-ph="number">10</b><span>years in the field</span></div>
+      <div class="knum"><b data-ph="consent">25<small>%</small></b><span>of SBM FFestival’s fans download its app every year</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 03 · Claim ===================== -->
+<section class="claim" id="claim" aria-labelledby="claim-h">
+  <div class="wrap">
+    <h2 class="claim-t" id="claim-h"><span class="claim-1">You built a world for <span data-ph="number">40,000</span> people.</span>
+      <span class="claim-2">Then you handed them <span class="roll" id="roll"><span class="roll-w" id="rollW" data-mark="circle" data-mark-trigger="manual" style="--mark-color:#C7E635"><span id="rollT">a blurry PDF</span></span></span><span class="dot-end">.</span></span></h2>
+    <p class="claim-sub">Set times that move, a map that works offline, one push in a storm, a report on Monday. <b>In your colours.</b></p>
+  </div>
+</section>
+
+<!-- ===================== 04 · Sponsors ===================== -->
+<section id="sponsors" aria-labelledby="sp-h">
+  <!-- 4a · the green band -->
+  <div class="shout" id="shout">
+    <div class="wrap shout-in">
+      <div class="shout-l">
+        <p class="eyebrow dark">Sponsors</p>
+        <h2 class="shout-h" id="sp-h">Your accountant <span>will love it.</span></h2>
+        <p class="shout-sub">One sponsor pays for your app, and pays you the same again.</p>
+      </div>
+      <figure class="ledger" id="ledger" aria-label="A spreadsheet: festival app minus £20,000, sponsor package plus £40,000, stays with you plus £20,000. The app column turns green.">
+        <div class="lg-bar"><span class="lg-dots"><i></i><i></i><i></i></span><span>festival-budget.xlsx</span></div>
+        <table>
+          <thead><tr><th></th><th>A</th><th class="c-app">B · The app</th></tr></thead>
+          <tbody>
+            <tr class="r1"><th>1</th><td>Festival app · 1 edition</td><td class="v" data-ph="price">−£20,000</td></tr>
+            <tr class="r2"><th>2</th><td>Sponsor package</td><td class="v" data-ph="price">+£40,000</td></tr>
+            <tr class="r3"><th>3</th><td><b>Stays with you</b></td><td class="v" data-ph="price"><b>+£20,000</b></td></tr>
+          </tbody>
+        </table>
+        <figcaption class="hand">(yes, the app column ends up green. so does the whole Excel.)</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- 4b · the calculator -->
+  <div class="sec calc" id="calc">
+    <div class="wrap">
+      <div class="sec-head row-head">
+        <div><p class="eyebrow">Where the brand lives</p>
+        <h2 class="h2">Eight places a brand can live in your app. <span class="lime">Each one counted.</span></h2></div>
+        <div><h3 class="h3">Tick a place. Watch the package add up.</h3><p class="lead small-lead">Tick the places your sponsor gets. The total is what the sponsor pays your festival. The brand in the screens, Halden Lager, is invented.</p></div>
+      </div>
+      <div id="calcBox" data-calc data-currency="£" data-split="50" data-split-cap="20000" data-split-a="LineApp, for the app" data-split-b="Your festival keeps" data-total-label="The sponsor pays" data-empty="Nothing ticked yet. Start with the tab bar: it’s on every screen." data-reach="{people} people saw it · {times} times in all">
+        <script type="application/json">[
+          {"id":"tab-bar-logo","name":"Logo in the tab bar","note":"On every screen, from the gates to the walk home.","price":12000,"people":18240,"impressions":1440000,"thumb":"assets/sponsor/thumbs/tab-bar-logo.jpg","on":true},
+          {"id":"launch-cover-poster","name":"Launch cover and Discover poster","note":"The first thing people see when they open the app.","price":8000,"people":16900,"impressions":96000,"thumb":"assets/sponsor/thumbs/launch-cover-poster.jpg"},
+          {"id":"zone-push","name":"Push to the bar zone","note":"“Shortest queue at the bar, now.” Only to phones nearby, 18+, three a day at most.","price":6000,"people":9800,"impressions":27000,"thumb":"assets/sponsor/thumbs/zone-push.jpg"},
+          {"id":"shop-shelf","name":"Shop shelf","note":"The brand’s own shelf: vouchers, merch, alcohol-free packs.","price":4400,"people":5200,"impressions":8150,"thumb":"assets/sponsor/thumbs/shop-shelf.jpg"},
+          {"id":"stage-map-pin","name":"Sponsored stage and map pin","note":"A stage or a pin in the brand’s name. People walk to it.","price":3600,"people":11600,"impressions":21500,"thumb":"assets/sponsor/thumbs/stage-map-pin.jpg"},
+          {"id":"identity-frame","name":"Identity card frame","note":"Every guest’s identity card, framed in the brand’s colours.","price":2600,"people":3100,"impressions":4300,"thumb":"assets/sponsor/thumbs/identity-frame.jpg"},
+          {"id":"faq-answer","name":"FAQ answer","note":"“Where’s the water?” answered by the brand that brought it.","price":2000,"people":7400,"impressions":11200,"thumb":"assets/sponsor/thumbs/faq-answer.jpg"},
+          {"id":"monday-survey","name":"Monday survey","note":"One question on Monday: did they remember the brand?","price":1400,"people":4600,"impressions":5100,"thumb":"assets/sponsor/thumbs/monday-survey.jpg"}
+        ]</script>
+      </div>
+      <p class="calc-status" id="calcStatus" aria-live="polite" data-ph="price">Package £12,000 · £8,000 short of paying for your app.</p>
+      <p class="calc-note small"><b class="w" data-ph="price">The app is a fixed £20,000. The sponsor’s money pays for it first; everything above stays with you.</b> Example prices for a festival of <span data-ph="number">40,000</span>. Every place has its own line in the sponsor’s report. <button class="link" type="button" data-overlay="#ov-count" data-overlay-size="narrow">How each place is counted</button></p>
+
+      <!-- 4c · reach, plainly -->
+      <div class="reach" data-ph="number">
+        <h3 class="h3">How many saw it. How many times.</h3>
+        <div class="knum-row reach-row" style="--n:2">
+          <div class="knum"><b>18,240</b><span>people saw the sponsor’s logo</span></div>
+          <div class="knum"><b>1.61<small>m</small></b><span>times they saw the sponsor, all eight places together</span></div>
+        </div>
+        <p class="reach-f">The logo sits in the tab bar, so everyone who opens the app sees it, every time they open a screen. Each place has its own count in the report, so the sponsor sees which ones worked.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4d · the busy bar -->
+  <div class="bar" id="bar">
+    <div class="bar-img"><img id="barImg" src="assets/img/sponsor-bar-busy-XL.jpg" alt="Seen from above, people in ponchos queue in long lanes into a busy copper big-top bar." loading="lazy" width="2000" height="1122" data-ph="photo"></div>
+    <svg class="bar-flow" id="barFlow" viewBox="0 0 1000 561" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+    <div class="wrap bar-in">
+      <div class="bar-head">
+        <p class="eyebrow">Live · the sponsor’s zone</p>
+        <h2 class="h2">Saturday 21:41. <span class="w">The sponsor watches its bar fill up.</span></h2>
+      </div>
+      <div class="bar-live" id="barLive" data-ph="number">
+        <p class="bl-k"><span class="live-dot" aria-hidden="true"></span>The sponsor’s zone · 20:41 to 21:41</p>
+        <div class="bl-n"><b id="barN">3,480</b><span>in the zone, last hour</span></div>
+        <ul class="bl-g">
+          <li><b>12 min</b><span>average in the zone</span></li>
+          <li><b>38 %</b><span>aged 18–24</span><i class="mbar"><i style="--w:38%"></i></i></li>
+          <li><b>44 %</b><span>from abroad</span><i class="mbar"><i style="--w:44%"></i></i></li>
+        </ul>
+        <p class="bl-f">Counted from guests who switched location on. Age from the 18+ check.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4e · the SBM case -->
+  <div class="sec case" id="case" data-ph="case">
+    <div class="wrap case-grid">
+      <div class="case-copy">
+        <p class="case-tag">Real case · numbers and brand names need SBM’s and the brand’s consent before publishing</p>
+        <h2 class="h2">One push. <span class="lime">About 1,000 people in 3 minutes.</span></h2>
+        <p class="lead">The zone was empty. A sportswear brand’s stage, a hip-hop artist on it, and almost nobody in front. SBM FFestival sent one push from its LineApp app. In three minutes, about 1,000 people walked in.</p>
+        <button class="btn btn-line case-replay" id="caseReplay" type="button"><svg aria-hidden="true"><use href="#i-replay"/></svg>Play the three minutes again</button>
+      </div>
+      <figure class="case-vis" id="caseVis">
+        <div class="cv-stage">
+          <div class="cv-img"><img src="assets/img/sportswear-zone-case-empty.jpg" alt="Illustration: the ground in front of a stage, empty." loading="lazy" width="2000" height="1116" data-ph="photo"></div>
+          <div class="cv-full"><img src="assets/img/sportswear-zone-case-full.jpg" alt="Illustration: the same ground, now packed, phones up." loading="lazy" width="2000" height="1116" data-ph="photo"></div>
+          <div class="cv-push" aria-hidden="true"><span class="ic"><svg><use href="#mark"/></svg></span><span><small>SBM FFestival · now</small><b>Sportswear stage, live now</b>Walk over: 2 minutes from you.</span></div>
+          <span class="cv-tag">Illustration, not the real zone</span>
+        </div>
+        <div class="cv-data">
+          <div class="cv-count"><b id="caseN">60</b><span id="caseT">people in the zone · a minute before the push</span></div>
+          <svg class="cv-chart" viewBox="0 0 300 90" preserveAspectRatio="none" aria-hidden="true"><path class="ax" d="M0 86 H300"/><path class="push" d="M100 4 V86"/><path class="ln" id="caseLn" d="M0 80 C 40 80, 80 80, 100 80 C 130 79, 140 40, 160 22 C 180 12, 200 10, 300 8"/></svg>
+        </div>
+        <figcaption>People in the zone, minute by minute. Push sent at minute 0. <span class="mute">Shape illustrative.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- 4f · consent in three steps -->
+  <div class="sec consent" id="consent">
+    <div class="wrap">
+      <div class="sec-head row-head">
+        <div><p class="eyebrow">The contact hand-off</p>
+        <h2 class="h2">Scan. Say yes. <span class="lime">The sponsor gets a number.</span></h2></div>
+        <div class="cs-stat" data-ph="number"><b>2,412</b><span>said yes, out of 7,090 who scanned.</span><small data-ph="price">A trade-show stand pays about £150 for a scanned badge. These came with a yes.</small></div>
+      </div>
+      <div data-consent3 data-brand="Halden Lager" data-interval="4200" data-label="How the contact hand-off works">
+        <ol>
+          <li data-img="assets/sponsor/consent/09a-zone-scan.jpg" data-alt="The app's scanner over the sponsor's zone code at the bar."><b>Scan</b><span>A guest scans the code at the sponsor’s bar with your festival’s app. Nothing is shared yet.</span></li>
+          <li data-img="assets/sponsor/consent/09b-consent-sheet.jpg" data-alt="A consent sheet naming the sponsor and the reason, with a switch that is off."><b>Say yes</b><span>One switch, off until they turn it on. The screen says who is asking and why.</span></li>
+          <li data-img="assets/sponsor/consent/09c-consent-done.jpg" data-alt="Confirmation: first name and number shared, with Take it back."><b>Done</b><span>The sponsor gets a first name and a number. Nothing else. One tap in Me takes it back.</span></li>
+        </ol>
+      </div>
+      <p class="cs-more"><button class="link" type="button" data-overlay="#ov-consent" data-overlay-size="narrow">How consent works</button></p>
+    </div>
+  </div>
+
+  <!-- 4g · honest maths: the printer -->
+  <div class="sec maths" id="maths">
+    <div class="wrap maths-grid">
+      <div class="maths-copy">
+        <p class="eyebrow">The money</p>
+        <h2 class="h2">The honest maths. <span class="lime">The app isn’t free.</span></h2>
+        <p class="lead" data-ph="price">Your app costs £20,000 for one edition. One sponsor package pays £40,000. The sponsor pays for your app, and pays you the same again.</p>
+        <p class="risk" data-ph="price">If no package sells, you pay the £20,000 yourself. That’s the deal, written down.</p>
+        <div class="split" data-ph="price">
+          <div><span>The sponsor pays</span><b>£40,000</b></div>
+          <div><span>LineApp, for the app</span><b>£20,000</b></div>
+          <div class="k"><span>Your festival keeps</span><b>£20,000</b></div>
+        </div>
+        <div class="papers">
+          <div class="stack" aria-hidden="true">
+            <img src="assets/sponsor/report/report-XL-p8.jpg" alt="" loading="lazy" class="pg pg3">
+            <img src="assets/sponsor/report/report-XL-p3.jpg" alt="" loading="lazy" class="pg pg2">
+            <img src="assets/sponsor/report/report-XL-p1.jpg" alt="" loading="lazy" class="pg pg1">
+          </div>
+          <div class="dl">
+            <button class="btn btn-lime" type="button" data-overlay="#ov-report"><svg aria-hidden="true"><use href="#i-open"/></svg>Open the example report</button>
+            <a class="btn btn-line" href="assets/sponsor/report-XL.pdf" download><svg aria-hidden="true"><use href="#i-down"/></svg>Download the example PDF</a>
+            <a class="btn btn-line" href="assets/sponsor/your-logo-XL.pdf" download><svg aria-hidden="true"><use href="#i-down"/></svg>Download the “your logo” PDF</a>
+            <p class="small">The “your logo” version has empty slots for your festival and your sponsor. Send it to the sponsor you’re talking to.</p>
+          </div>
+        </div>
+      </div>
+      <div class="maths-print">
+        <div class="kprn" id="printer" data-printer data-printer-src="assets/sponsor/receipt-XL.png" data-printer-alt="Example receipt. The sponsor pays £40,000. LineApp gets £20,000 for the app. Your festival keeps £20,000. 18,240 people saw the logo, 1,440,000 times; 2,412 said yes to the sponsor. If no package sells, you pay £20,000." data-printer-dir="down" data-printer-duration="5600" data-printer-start=".15" data-printer-label="Sponsor till" data-printer-replay="Print it again" data-ph="price"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 05 · The day on one photo ===================== -->
+<section class="day" id="day" aria-labelledby="day-h">
+  <div class="wrap day-head">
+    <p class="eyebrow">The map</p>
+    <h2 class="h2" id="day-h">One field. One whole day. <span class="g">From the first tent peg to the last shuttle.</span></h2>
+    <p class="lead small-lead">Scroll, and watch a day pass on your own site. Every label is something your panel sees live. <span class="mute">Example festival. Queue, locker and till numbers need those partners connected.</span></p>
+  </div>
+  <div class="kjr" id="journey" data-journey data-counter-labels="Inside the arena|Lockers taken|Meals sold|Water refills" data-step-vh="46" data-clock-step data-ph="number">
+    <figure class="kjr__step" data-time="10:00" data-label="Morning" data-counters="26,500|21 %|3,800|2,900">
+      <picture><source media="(max-width: 700px)" srcset="assets/img/journey-XL-1-morning-3x4.jpg"><img src="assets/img/journey-XL-1-morning-16x9.jpg" alt="The camping festival from above in cool morning light: tents, the dark Main Stage, coaches by the gate." width="2000" height="1116" data-ph="photo"></picture>
+      <figcaption><span class="kjr__when">Morning</span><h3>Gates open. The early ones already hold the barrier.</h3><p>Tents go up on the campsites. Shuttles from the station every 8 minutes.</p></figcaption>
+      <span class="kjr__pin" data-x="76.7" data-y="70" data-xm="87.7" data-ym="70" data-icon="🚌" data-tone="lime" data-align-m="left">Shuttle · every 8 min</span>
+      <span class="kjr__pin" data-x="50" data-y="76" data-xm="23.9" data-ym="76" data-icon="🎟️">Gate A queue · 9 min</span>
+      <span class="kjr__pin m-off" data-x="8.1" data-y="62.7" data-icon="⛺" data-align="right">Campsite West · 62 % pitched</span>
+      <span class="kjr__pin m-off" data-x="33.8" data-y="76" data-icon="🔐" data-align="left">Lockers · 21 % taken</span>
+      <span class="kjr__pin" data-x="51.4" data-y="43.1" data-xm="27.2" data-ym="43.1" data-stage="next" data-next-label="Soundcheck · first set 12:00">Main Stage</span>
+    </figure>
+    <figure class="kjr__step" data-time="16:30" data-label="Afternoon" data-counters="28,400|58 %|14,200|18,000">
+      <picture><source media="(max-width: 700px)" srcset="assets/img/journey-XL-2-afternoon-3x4.jpg"><img src="assets/img/journey-XL-2-afternoon-16x9.jpg" alt="The same view in warm afternoon light: the East Stage lit and playing, the Main Stage dark." width="2000" height="1116" loading="lazy" data-ph="photo"></picture>
+      <figcaption><span class="kjr__when">Afternoon</span><h3>The East Stage opens the weekend.</h3><p>Forty thousand arriving. 11,600 still outside the gates.</p></figcaption>
+      <span class="kjr__pin" data-x="79.1" data-y="33" data-xm="88" data-ym="33" data-stage="live" data-align-m="left">East Stage</span>
+      <span class="kjr__pin" data-x="51.4" data-y="43.1" data-xm="27.2" data-ym="43.1" data-stage="next" data-next-label="Already queuing for 18:00">Main Stage</span>
+      <span class="kjr__pin" data-x="63.1" data-y="30.8" data-xm="55.2" data-ym="22" data-stage="next" data-next-label="Changeover">North Stage</span>
+      <span class="kjr__pin" data-x="70.1" data-y="63.6" data-xm="71.9" data-ym="63.6" data-icon="🍔" data-align-m="left">Food trucks · 14,200 meals</span>
+      <span class="kjr__pin m-off" data-x="63.6" data-y="68.7" data-icon="👕" data-align="left">Merch · 2,100 orders</span>
+    </figure>
+    <figure class="kjr__step" data-time="20:52" data-label="Storm" data-storm data-counters="35,200|84 %|22,600|31,000">
+      <picture><source media="(max-width: 700px)" srcset="assets/img/journey-XL-storm-3x4.jpg"><img src="assets/img/journey-XL-storm-16x9.jpg" alt="The same view under a dark storm sky, rain rolling in from the left." width="2000" height="1116" loading="lazy" data-ph="photo"></picture>
+      <figcaption><span class="kjr__when">Storm</span><h3>A storm cell, 20 minutes out.</h3><p>One alert to every phone with the app. The PA and the stewards say the same thing: the app is one more channel, not the safety plan.</p></figcaption>
+      <span class="kjr__pin" data-x="44" data-y="20" data-xm="30" data-ym="24" data-icon="⛈️" data-tone="warn" data-align="right" data-align-m="right">Storm · 25 km west · moving east</span>
+      <span class="kjr__pin" data-x="51.4" data-y="43.1" data-xm="27.2" data-ym="43.1" data-stage="next" data-next-label="Pauses at 21:10">Main Stage</span>
+      <span class="kjr__pin m-off" data-x="38.4" data-y="62.2" data-icon="⛺" data-tone="lime" data-align="left">Shelter · big top by Gate B</span>
+      <span class="kjr__pin" data-x="50" data-y="76" data-xm="23.9" data-ym="76" data-icon="📣">Alert sent 20:52 · read by 91 % in 4 min</span>
+      <div class="kjr__alert"><span class="kjr__app"><img src="assets/kit-mark.svg" alt=""></span><b>Your festival · Safety <small>now</small></b><p>Storm in 20 minutes. Main Stage pauses at 21:10. Go to the big tops by Gates B and D, marked on your map. Follow the stewards.</p></div>
+    </figure>
+    <figure class="kjr__step" data-time="23:15" data-label="Evening" data-counters="36,900|91 %|31,000|46,000">
+      <picture><source media="(max-width: 700px)" srcset="assets/img/journey-XL-3-evening-3x4.jpg"><img src="assets/img/journey-XL-3-evening-16x9.jpg" alt="The same view at blue hour: the Main Stage lit, festoon lights on over the food trucks." width="2000" height="1116" loading="lazy" data-ph="photo"></picture>
+      <figcaption><span class="kjr__when">Evening</span><h3>Rain gone. Lights on. Ellis Rook on the Main Stage.</h3><p>21:40, all clear. The Main Stage started again at 21:55, and every My plan moved with it.</p></figcaption>
+      <span class="kjr__pin" data-x="51.4" data-y="43.1" data-xm="27.2" data-ym="43.1" data-stage="live">Main Stage · Ellis Rook</span>
+      <span class="kjr__pin" data-x="63.1" data-y="30.8" data-xm="55.2" data-ym="22" data-stage="next" data-next="00:40">North Stage</span>
+      <span class="kjr__pin m-off" data-x="79.1" data-y="33" data-stage="next" data-next-label="Done for today" data-align="left">East Stage</span>
+      <span class="kjr__pin" data-x="77.5" data-y="51.7" data-xm="89.6" data-ym="51.7" data-icon="🍺" data-tone="lime" data-align-m="left">Shortest queue · East bar · 4 min</span>
+      <span class="kjr__pin m-off" data-x="38.4" data-y="62.2" data-icon="🤝" data-align="left">Sponsor zone · 3,480 in the last hour</span>
+      <span class="kjr__pin m-off" data-x="33.8" data-y="76" data-icon="🔐" data-tone="warn" data-align="left">Lockers · 91 % taken</span>
+    </figure>
+    <figure class="kjr__step" data-time="02:30" data-label="The end" data-counters="5,400|12 %|33,500|52,000">
+      <picture><source media="(max-width: 700px)" srcset="assets/img/journey-XL-4-end-3x4.jpg"><img src="assets/img/journey-XL-4-end-16x9.jpg" alt="The same view at night: stages dark, the coaches lit by the gate." width="2000" height="1116" loading="lazy" data-ph="photo"></picture>
+      <figcaption><span class="kjr__when">The end</span><h3>Last set done. Last shuttle at 03:00.</h3><p>The arena empties out and the campsites go quiet. The app counts down to the shuttle and shows the walk from every campsite.</p></figcaption>
+      <span class="kjr__pin" data-x="76.7" data-y="70" data-xm="87.7" data-ym="70" data-icon="🚌" data-tone="lime" data-align-m="left">Last shuttle · 03:00</span>
+      <span class="kjr__pin" data-x="76.9" data-y="58.8" data-xm="88.2" data-ym="62" data-icon="✚" data-align-m="left">First aid · open all night</span>
+      <span class="kjr__pin m-off" data-x="8.1" data-y="62.7" data-icon="⛺" data-align="right">Campsite West · quiet from 03:00</span>
+      <span class="kjr__pin" data-x="51.4" data-y="43.1" data-xm="27.2" data-ym="43.1" data-stage="next" data-next-label="Arena closing · back tomorrow 14:00">Main Stage</span>
+    </figure>
+  </div>
+
+</section>
+
+<!-- ===================== 06 · Data ===================== -->
+<section class="sec data" id="data" aria-labelledby="data-h">
+  <div class="wrap">
+    <div class="data-top">
+      <div>
+        <p class="eyebrow">Your data</p>
+        <h2 class="h2 data-h" id="data-h">They say data is the new oil. <span class="lime">Here’s your well.</span></h2>
+      </div>
+      <div class="insight">
+        <p class="ins-lead">Your ticketing tells you how many tickets you sold. It doesn’t tell you who your crowd is. With LineApp you know:</p>
+        <ol class="ins">
+          <li><b>1</b><span><strong>Who paid.</strong> Once your ticketing is connected.</span></li>
+          <li><b>2</b><span><strong>Who came.</strong> Gate by gate, hour by hour.</span></li>
+          <li><b>3</b><span><strong>Whose it is.</strong> Yours. We don’t keep it for ourselves.</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="tiles" data-ph="number">
+      <div class="tile t-gate"><svg class="pic" viewBox="0 0 120 64" aria-hidden="true"><use href="#p-gate"/></svg><p class="tk">Inside the gates · still outside</p><p class="tv"><b>36,900</b><span class="sl">/</span><b class="m">3,100</b></p><div class="gbar"><i style="--w:92%"></i></div><span class="needs">needs your ticketing</span></div>
+      <div class="tile"><svg class="pic" viewBox="0 0 120 64" aria-hidden="true"><use href="#p-app"/></svg><p class="tk">People with the app</p><p class="tv"><b>18,240</b></p><p class="tf">45 % of guests</p><span class="needs in">in the app</span></div>
+      <div class="tile"><svg class="pic" viewBox="0 0 120 64" aria-hidden="true"><use href="#p-lockers"/></svg><p class="tk">Lockers taken</p><p class="tv"><b>91 %</b></p><span class="needs">needs your locker partner</span></div>
+      <div class="tile"><svg class="pic" viewBox="0 0 120 64" aria-hidden="true"><use href="#p-coins"/></svg><p class="tk">The sponsor’s zone, last hour</p><p class="tv"><b>3,480</b></p><p class="tf">people</p><span class="needs in">location, with consent</span></div>
+      <div class="tile"><svg class="pic" viewBox="0 0 120 64" aria-hidden="true"><use href="#p-switch"/></svg><p class="tk">Shared their number with the sponsor</p><p class="tv"><b class="lime">2,412</b></p><span class="needs in">in the app, with consent</span></div>
+      <div class="tile"><svg class="pic" viewBox="0 0 120 64" aria-hidden="true"><use href="#p-queue"/></svg><p class="tk">Shortest queue now</p><p class="tv sm"><b>East bar</b><span>4 min</span></p><span class="needs">needs your bar tills</span></div>
+    </div>
+    <p class="honest">The app sees people with the app. Location only where they switched it on. Whole-crowd counts need your ticketing gates.</p>
+
+    <!-- XL control room -->
+    <div class="ctrl" id="ctrl" data-ph="number">
+      <div class="ctrl-top">
+        <span class="ct-l"><svg aria-hidden="true"><use href="#mark"/></svg><b>Control room</b><span id="ctrlWhen">Friday 23:00 · Next 15 minutes</span></span>
+        <div class="ct-sw" role="group" aria-label="Choose a moment">
+          <button type="button" aria-pressed="false" data-ctrl="storm">20:52 · storm coming</button><button type="button" aria-pressed="true" data-ctrl="now">23:00 · Ellis Rook next</button>
+        </div>
+      </div>
+      <div class="ctrl-grid">
+        <figure class="ctrl-map">
+          <svg id="ctrlSvg" viewBox="0 0 1000 558" role="img" aria-label="The site from above at night. Dots are guests who switched location on. Most are in front of the Main Stage.">
+            <defs>
+              <radialGradient id="cloud" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#F2A93B" stop-opacity=".55"/><stop offset=".7" stop-color="#F2A93B" stop-opacity=".18"/><stop offset="1" stop-color="#F2A93B" stop-opacity="0"/></radialGradient>
+              <pattern id="rain" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(18)"><path d="M0 0 V7" stroke="#F2A93B" stroke-opacity=".55" stroke-width="1.4"/></pattern>
+            </defs>
+            <image id="ctrlImg" href="assets/img/journey-XL-3-evening-16x9.jpg" x="0" y="0" width="1000" height="558" preserveAspectRatio="xMidYMid slice"/>
+            <rect class="veil" x="0" y="0" width="1000" height="558"/>
+            <g id="dots"></g>
+            <g class="flowto" id="flowTo"><path d="M500 452 C 500 420, 505 380, 514 330"/></g>
+            <g class="sites">
+              <g class="st live" transform="translate(514 236)"><circle r="9"/><text x="18" y="-6">Main Stage</text><text class="s" x="18" y="14">Ellis Rook · 23:15</text></g>
+              <g class="st" transform="translate(631 170)"><circle r="7"/><text x="16" y="-6">North Stage</text><text class="s" x="16" y="14">Next 00:40</text></g>
+              <g class="st" transform="translate(791 160)"><circle r="7"/><text x="16" y="-6">East Stage</text><text class="s" x="16" y="14">Done for today</text></g>
+              <g class="pt" transform="translate(775 290)"><circle r="5"/><text x="10" y="4">East bar</text></g>
+              <g class="pt" transform="translate(440 214)"><circle r="5"/><text x="-12" y="6" text-anchor="end">North bar</text></g>
+              <g class="pt" transform="translate(500 462)"><circle r="5"/><text x="10" y="4">Gate D</text></g>
+              <g class="pt" transform="translate(338 456)"><circle r="5"/><text x="-10" y="4" text-anchor="end">Gate B</text></g>
+              <g class="pt" transform="translate(767 392)"><circle r="5"/><text x="10" y="4">Shuttle stop</text></g>
+              <g class="pt dim" transform="translate(90 330)"><text>Campsite West</text></g>
+              <g class="pt dim" transform="translate(880 236)"><text text-anchor="middle">Campsite East</text></g>
+            </g>
+            <g id="storm" class="storm"><ellipse cx="0" cy="0" rx="210" ry="150" fill="url(#cloud)"/><ellipse cx="0" cy="0" rx="170" ry="120" fill="url(#rain)"/></g>
+            <g class="tops" id="tops"><g transform="translate(384 336)"><path d="M-12 8 l12 -12 l12 12 z"/><text y="26" text-anchor="middle">big top B</text></g><g transform="translate(735 252)"><path d="M-12 8 l12 -12 l12 12 z"/><text y="26" text-anchor="middle">big top D</text></g></g>
+          </svg>
+          <figcaption>Where people are now. Dots are guests who switched location on.</figcaption>
+        </figure>
+        <div class="ctrl-next">
+          <ol class="nx" id="nxNow">
+            <li><b>Main Stage fills up.</b> About 4,200 more people heading in for Ellis Rook at 23:15. Open the Gate D lane now.</li>
+            <li><b>East bar queue is growing.</b> 9 minutes and rising. North bar has 3. <button class="mini" type="button" data-sendpush>Send the push?</button></li>
+            <li><b>Shuttle stop is quiet.</b> First rush expected at 00:40, when the North Stage set ends.</li>
+            <li><b>Lockers at 91 %.</b> Campsite West block is full; Campsite East has 340 free.</li>
+            <li><b>Weather.</b> Clear for the next hour. Next rain band after 03:00.</li>
+          </ol>
+          <div class="nx nx-storm" id="nxStorm" hidden>
+            <p class="amber-card"><b>Storm cell 25 km west, about 20 minutes out.</b> Alert drafted. Send when your safety lead says go.</p>
+            <p class="alert-text">“Storm in 20 minutes. Main Stage pauses at 21:10. Go to the big tops by Gates B and D, marked on your map. Follow the stewards.”</p>
+            <button class="btn btn-amber" type="button" id="sendAlert">Send the alert</button>
+            <p class="sent" id="sentLine" hidden><b>Sent 20:52</b> · read by <span data-ph="number">91 %</span> of app users on site so far. Sponsor content paused.</p>
+            <p class="small">The PA and the stewards say the same thing. The app is one more channel, not the safety plan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="own"><b>It’s your festival’s data. We don’t keep a copy for ourselves.</b> <button class="link arrow" type="button" data-overlay="#ov-data" data-overlay-size="narrow">Who owns it, where it’s kept, for how long: answered in the FAQ →</button></p>
+  </div>
+</section>
+
+<!-- ===================== 07 · Integrations ===================== -->
+<section class="sec integ" id="integrations" aria-labelledby="int-h">
+  <div class="wrap">
+    <div class="sec-head row-head">
+      <div><p class="eyebrow">Integrations</p>
+      <h2 class="h2" id="int-h">One LineApp. <span class="lime">Everything plugs in.</span></h2></div>
+      <p class="lead small-lead">Your team keeps its sheets, chats and inboxes. Tap a tool to see what goes in and what comes out.</p>
+    </div>
+    <div class="orb" data-orbit data-orbit-speed="170,240" data-orbit-mobile="rings" data-ph="integration">
+      <div data-orbit-core><img src="assets/lineapp-logo-white.svg" alt="LineApp"></div>
+      <button data-orbit-item data-ring="1" data-name="Spotify" data-dir="pull" data-line="Artist top tracks play on the artist page. Guests save the festival playlist." data-logo="assets/logos/color/spotify.svg"><img src="assets/logos/white/spotify.svg" alt=""></button>
+      <button data-orbit-item data-ring="1" data-name="Apple Music" data-dir="pull" data-line="Previews on every artist page for iPhone users, and “add to library”." data-logo="assets/logos/color/applemusic.svg"><img src="assets/logos/white/applemusic.svg" alt=""></button>
+      <button data-orbit-item data-ring="1" data-name="Tidal" data-dir="pull" data-line="Artist previews and a link out for Tidal listeners." data-logo="assets/logos/color/tidal.svg"><img src="assets/logos/white/tidal.svg" alt=""></button>
+      <button data-orbit-item data-ring="1" data-name="TikTok" data-dir="both" data-line="Artists’ clips play in the feed; guests share their identity card to TikTok." data-logo="assets/logos/color/tiktok.svg"><img src="assets/logos/white/tiktok.svg" alt=""></button>
+      <button data-orbit-item data-ring="1" data-name="YouTube" data-dir="pull" data-line="Music videos and live clips play on the artist page and in the For you feed." data-logo="assets/logos/color/youtube.svg"><img src="assets/logos/white/youtube.svg" alt=""></button>
+      <button data-orbit-item data-ring="1" data-name="Instagram" data-dir="both" data-line="The identity card and My plan go to Stories; the artist’s posts show on the artist page." data-logo="assets/logos/color/instagram.svg"><img src="assets/logos/white/instagram.svg" alt=""></button>
+      <button data-orbit-item data-ring="1" data-name="Ticketmaster" data-dir="pull" data-line="Gate scans feed the inside / outside count on the live panel." data-logo="assets/logos/color/ticketmaster.svg"><img src="assets/logos/white/ticketmaster.svg" alt=""></button>
+      <button data-orbit-item data-ring="1" data-name="Eventbrite" data-dir="pull" data-line="Ticket buyers matched to app users, so you see who paid and who came." data-logo="assets/logos/color/eventbrite.svg"><img src="assets/logos/white/eventbrite.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="Google Sheets" data-dir="pull" data-line="Change a set time in your sheet at 16:02. It’s on every phone at 16:03." data-logo="assets/logos/color/google-sheets.svg"><img src="assets/logos/white/google-sheets.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="Excel" data-dir="push" data-line="The Monday numbers land in an Excel workbook, one tab per sponsor. (And yes, it ends up green.)" data-logo="assets/logos/color/microsoft-excel.svg"><img src="assets/logos/white/microsoft-excel.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="Notion" data-dir="pull" data-line="Write the FAQ and site info in Notion. The app’s FAQ updates from it." data-logo="assets/logos/color/notion.svg"><img src="assets/logos/white/notion.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="Slack" data-dir="push" data-line="Every push and every set-time change, posted in #production as it happens." data-logo="assets/logos/color/slack.svg"><img src="assets/logos/white/slack.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="Microsoft Teams" data-dir="push" data-line="Storm alerts and gate counts posted to your production channel on Teams." data-logo="assets/logos/color/microsoft-teams.svg"><img src="assets/logos/white/microsoft-teams.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="WhatsApp" data-dir="push" data-line="Guests send their plan or a crew invite to a WhatsApp chat in one tap." data-logo="assets/logos/color/whatsapp.svg"><img src="assets/logos/white/whatsapp.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="Gmail" data-dir="push" data-line="The Monday report arrives as a PDF, ready to forward to the sponsor." data-logo="assets/logos/color/gmail.svg"><img src="assets/logos/white/gmail.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="Shopify" data-dir="pull" data-line="Your merch store’s products on the app’s shop shelf; orders counted by the hour." data-logo="assets/logos/color/shopify.svg"><img src="assets/logos/white/shopify.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="Stripe" data-dir="both" data-line="Takes payment for shop vouchers and pre-orders, straight to your account." data-logo="assets/logos/color/stripe.svg"><img src="assets/logos/white/stripe.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="HubSpot" data-dir="push" data-line="Opted-in contacts land in your CRM with the consent record attached." data-logo="assets/logos/color/hubspot.svg"><img src="assets/logos/white/hubspot.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="Mailchimp" data-dir="push" data-line="Fans who opted in go to your list, tagged by the sets they saved." data-logo="assets/logos/color/mailchimp.svg"><img src="assets/logos/white/mailchimp.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="Google Analytics" data-dir="push" data-line="Every app number, raw, in your own GA4 account." data-logo="assets/logos/color/google-analytics.svg"><img src="assets/logos/white/google-analytics.svg" alt=""></button>
+      <button data-orbit-item data-ring="2" data-name="Zapier" data-dir="both" data-line="A set time changes, a storm alert goes out: start any flow in any tool you use." data-logo="assets/logos/color/zapier.svg"><img src="assets/logos/white/zapier.svg" alt=""></button>
+      <div class="korb__hint"><p>Pick a tool. We’ll show you what it does for your festival.</p><p class="small" style="margin-top:12px">Some connections are live, some are planned. We’ll tell you which in the demo. Missing your tool? Tell us in the form.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 08 · For the people ===================== -->
+<section class="sec people" id="people" aria-labelledby="pp-h">
+  <div class="wrap">
+    <div class="sec-head row-head">
+      <div><p class="eyebrow">For the people</p>
+      <h2 class="h2" id="pp-h">For the people. <span class="lime">And the friends they drag along.</span></h2></div>
+      <p class="lead small-lead">Seven reasons your crowd opens the app on Friday and is still using it on Sunday. Each one also sells a ticket or fills a zone.</p>
+    </div>
+
+    <div class="pp">
+      <!-- 1 · together -->
+      <article class="pc">
+        <div class="pc-t"><span class="pn">1</span><h3>Come for the plan. Bring the crew.</h3>
+          <p>Make your plan, tap Invite, and your friends see what you’re going to. A plan shared on Tuesday is a friend who buys a ticket on Wednesday.</p>
+          <span class="chip">Invite with a link · 3 people in your crew</span>
+          <p class="pc-org">Every invite is a ticket conversation you didn’t pay for.</p></div>
+        <span class="ph big"><img src="assets/app/crew-your-crew-en.jpg" alt="Your crew: three people, invite with a link, crew privacy." loading="lazy"></span>
+      </article>
+      <!-- 2 · find -->
+      <article class="pc">
+        <div class="pc-t"><span class="pn">2</span><h3>Find your crew. Even on one bar.</h3>
+          <p>Your crew shows on the map as their emoji. When the signal drops, you still see their last spot and the way there. Only friends who chose to share.</p>
+          <span class="chip">Maja · 140 m · by the East bar</span></div>
+        <span class="ph big"><img src="assets/app/crew-map-xl-en.jpg" alt="The map with five crew emoji left of the sound desk and one friend at the East bar, with the way there." loading="lazy" data-ph="feature"></span>
+      </article>
+      <!-- 3 · fog -->
+      <article class="pc pc-col" data-ph="feature">
+        <div class="pc-t"><span class="pn">3</span><h3>Uncover the festival.</h3>
+          <p>The map starts in fog and clears where you walk: the hidden stage, the quiet corner, the sponsor’s bar. Your crew races you to 100 %, and the sponsor gets visitors a banner never brings.</p>
+          <span class="chip">42 % uncovered · 3 spots left by the North Stage</span>
+          <p class="pc-org">A sponsor zone with too few visits can be the next thing in the fog. <span class="tag">In design</span></p></div>
+        <span class="maptile"><video data-lazy muted loop playsinline preload="none" poster="assets/app/fog-reveal-crop-poster.jpg" aria-label="On the map, the fog lifts over the main stage zone as you walk in." data-ph="licence"><source data-src="assets/app/fog-reveal-crop.webm" type="video/webm"><source data-src="assets/app/fog-reveal-crop.mp4" type="video/mp4"></video></span>
+      </article>
+      <!-- 4 · feed -->
+      <article class="pc">
+        <div class="pc-t"><span class="pn">4</span><h3>Six seconds per artist.</h3>
+          <p class="hook">“Jan Nowak.” That’s all a line-up list tells you. It’s 2026. We’re flying to Mars.</p>
+          <p>A feed that plays. Swipe, watch six seconds, tap Going. Every artist page plays too: video up top, seven clips below.</p>
+          <span class="chip">For you · Ellis Rook · tonight 23:15 · Going</span>
+          <div class="pc-mini"><span class="ph sm"><video data-lazy muted loop playsinline preload="none" poster="assets/app/artist-hero-video-loop-poster.jpg" aria-label="An artist page with the music video playing in the header." data-ph="licence"><source data-src="assets/app/artist-hero-video-loop.webm" type="video/webm"><source data-src="assets/app/artist-hero-video-loop.mp4" type="video/mp4"></video></span><span class="ph sm"><video data-lazy muted loop playsinline preload="none" poster="assets/app/artist-video-grid-loop-poster.jpg" aria-label="The artist's seven clips in a grid." data-ph="licence"><source data-src="assets/app/artist-video-grid-loop.webm" type="video/webm"><source data-src="assets/app/artist-video-grid-loop.mp4" type="video/mp4"></video></span></div></div>
+        <span class="ph big"><video data-lazy muted loop playsinline preload="none" poster="assets/app/feed-scroll-loop-poster.jpg" aria-label="The For you feed scrolls through artists, videos playing, one gets a like." data-ph="licence"><source data-src="assets/app/feed-scroll-loop.webm" type="video/webm"><source data-src="assets/app/feed-scroll-loop.mp4" type="video/mp4"></video></span>
+      </article>
+      <!-- 5 · identity -->
+      <article class="pc">
+        <div class="pc-t"><span class="pn">5</span><h3>Be a red rose for three days.</h3>
+          <p>Pick an emoji and it picks your nickname and colour. A red rose, a blue reindeer: that’s how your crew sees you on the map all weekend.</p>
+          <span class="chip">Your identity · Bitter Romantic 🌹</span>
+          <div class="pc-mini"><span class="ph sm"><img src="assets/app/identity-emoji-picker-en.jpg" alt="Pick one emoji: a rose gives the nickname Bitter Romantic." loading="lazy"></span></div></div>
+        <span class="ph big"><img src="assets/app/identity-card-en.jpg" alt="Your identity card, a big red rose: this is how your crew sees you." loading="lazy"></span>
+      </article>
+      <!-- 6 · pace and spot -->
+      <article class="pc pc-6">
+        <p class="pc-claim">Why treat the one screaming at the barrier the same as the one on a blanket at the back with a beer?</p>
+        <div class="spot">
+          <figure class="sp-a"><img src="assets/img/spot-barrier.jpg" alt="Fans at the barrier at night, phones up." loading="lazy" data-ph="photo"><figcaption><span class="chip lime">Right at the front · leave at 20:48</span></figcaption></figure>
+          <figure class="sp-b"><img src="assets/img/spot-blanket.jpg" alt="Two friends in hats on a blanket at the back of a sunny field, the stage far away." loading="lazy" data-ph="photo"><figcaption><span class="chip">At the back · leave at 20:56</span></figcaption></figure>
+          <span class="ph sp-phone"><img src="assets/app/pace-stage-spot-sliders-en.jpg" alt="Sliders: at the stage, right at the front; walking pace, normal 4.3 km/h." loading="lazy"></span>
+        </div>
+        <div class="pc-t"><span class="pn">6</span><h3>Your pace. Your spot.</h3>
+          <p>Tell the app how fast you walk and where you like to stand. We measure the walks between stages with the festival, and remind you to leave in time.</p>
+          <span class="chip">Walking pace · Normal · 4.3 km/h · Remind me to leave</span></div>
+      </article>
+      <!-- 7 · more -->
+      <article class="pc pc-7" data-ph="feature">
+        <div class="pc-t"><span class="pn">7</span><h3>And we’re not done.</h3><p>A few things we’re building next. Ask about them in the demo.</p></div>
+        <ul class="ideas">
+          <li><span class="tag">In design</span><b>Lock screen</b>What’s next and when to leave, without unlocking your phone.</li>
+          <li><span class="tag idea">Idea</span><b>Rain by the minute</b>“Rain in 12 minutes, stops at 21:40.” Stay, shelter or switch stage.</li>
+          <li><span class="tag idea">Idea</span><b>Your weekend, wrapped</b>Monday morning: 14 sets, 6 stages, 3 clashes solved. Made to share.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 09 · Partners ===================== -->
+<section class="sec partners" id="partners" aria-labelledby="pa-h">
+  <div class="wrap">
+    <div class="sec-head row-head">
+      <div><p class="eyebrow">Ten years in the field</p>
+      <h2 class="h2" id="pa-h">Ten years of festivals. <span class="lime">In their own words.</span></h2></div>
+      <p class="lead small-lead"><span data-ph="number">30+</span> festivals over <span data-ph="number">ten</span> years, from Kraków’s Jewish Culture Festival, running since 1988, to hip-hop in Warsaw. <b class="tap">Tap a festival to open its card.</b></p>
+    </div>
+    <div class="kexp pa-grid" data-expand data-more-label="Open the card" data-close-label="Close">
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/off-festival.png" alt="OFF Festival" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">OFF Festival</h3><p class="kexp__meta">Katowice · since 2006</p><span class="pa-q">Quote</span>
+        <div class="kexp__more"><ul class="kexp__facts"><li>Artur Rojek’s independent festival, picked for the music, not the charts.</li><li>European Festival Award winner, 2011 (medium-sized festivals).</li><li>Named by The Guardian in 2017 among ten festivals to see in Europe.</li></ul><blockquote class="kexp__quote" data-ph="consent"><p>“Prepared at a frantic pace, and the project presented drew our attention by its superiority to similar ones. They are fully aware of the requirements of the festival organizers, and thanks to their skills and enthusiasm, cooperation with them goes very well. Keep it up Lineapp!!!”</p><footer><img src="assets/partners/photos/artur-rojek-square-331.jpg" alt="" loading="lazy"><span><b>Artur Rojek</b><span>Director, OFF Festival</span></span></footer></blockquote></div>
+      </article>
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/polandrock.png" alt="Pol’and’Rock Festival" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">Pol’and’Rock Festival</h3><p class="kexp__meta">Free entry · since 1995</p><span class="pa-q tmp">Temporary quote</span>
+        <div class="kexp__more"><ul class="kexp__facts"><li>Started in 1995 as Przystanek Woodstock, run by the WOŚP charity.</li><li>Free entry, no tickets: one of Europe’s biggest free open-air festivals.</li><li>Hundreds of thousands of fans every summer.</li></ul><blockquote class="kexp__quote" data-ph="quote"><p>“Nobody buys a ticket to Pol’and’Rock, so we never had a list of who’s coming. The app became the one line we have to every person on the field: the timetable, the safety messages, the ‘meet you by the big stage’ moments.”</p><footer><span><b>Paweł T. · placeholder name</b><span>Festival production (temporary role)</span></span></footer><span class="kexp__ph">Temporary quote · placeholder name</span></blockquote></div>
+      </article>
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/malta-festival.png" alt="Malta Festival Poznań" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">Malta Festival Poznań</h3><p class="kexp__meta">Poznań · since 1991</p><span class="pa-q">Quote</span>
+        <div class="kexp__more"><ul class="kexp__facts"><li>Poznań’s international theatre and music festival since 1991.</li><li>EFFE Award 2015: the only Polish festival among Europe’s 12 winners.</li><li>35th edition in 2025, opened by Tilda Swinton.</li></ul><blockquote class="kexp__quote" data-ph="consent"><p>“What truly stood out was the app’s user-friendly interface and intuitive client dashboard. The final product was not only practical and functional, but also beautifully designed.Keep it up Lineapp!”</p><footer><img src="assets/partners/photos/michal-merczynski-400.jpg" alt="" loading="lazy"><span><b>Michał Merczyński</b><span>Festival director 1991–2023 (title as published on getlineapp.com: Director of the Malta Festival Poznan)</span></span></footer></blockquote></div>
+      </article>
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/festiwal-kultury-zydowskiej.png" alt="Jewish Culture Festival" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">Jewish Culture Festival</h3><p class="kexp__meta">Kraków · since 1988</p><span class="pa-q">Quote</span>
+        <div class="kexp__more"><ul class="kexp__facts"><li>Founded in 1988 in Kraków’s Kazimierz; about 200 events and about 30,000 people a year (organiser’s figures).</li><li>The closing concert on Szeroka Street draws more than 10,000 people.</li><li>35th edition in summer 2026.</li></ul><blockquote class="kexp__quote" data-ph="consent"><p>“The way they communicate with the client, their reliability, patience and, above all, their professionalism make LineApp a company you want to work with, and the results of this collaboration are of the highest quality.”</p><footer><img src="assets/partners/photos/janusz-makuch-252.png" alt="" loading="lazy"><span><b>Janusz Makuch</b><span>Director, Jewish Culture Festival</span></span></footer></blockquote></div>
+      </article>
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/sbm-ffestival.png" alt="SBM FFestival" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">SBM FFestival</h3><p class="kexp__meta">Warsaw · hip-hop · about 40,000 fans</p><span class="pa-q tmp">Temporary quote</span>
+        <div class="kexp__more"><ul class="kexp__facts"><li>SBM Label’s own festival: Polish rap’s biggest names in Warsaw.</li><li>About 40,000 people an edition (organiser’s figure).</li><li>25 % of its fans download the festival app every year (LineApp’s own figure).</li></ul><blockquote class="kexp__quote" data-ph="quote"><p>“We sent one push to an empty zone. Three minutes later it was full.”</p><footer><span><b>Norbert T. · placeholder name</b><span>SBM FFestival team (temporary role), needs consent</span></span></footer><span class="kexp__ph">Temporary quote · placeholder name</span></blockquote></div>
+      </article>
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/brave-festival.png" alt="Brave Festival" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">Brave Festival</h3><p class="kexp__meta">Wrocław · 2005–2018</p><span class="pa-q">Quote</span>
+        <div class="kexp__more"><ul class="kexp__facts"><li>A festival of endangered and exiled cultures, founded in 2005 by the Song of the Goat Theatre.</li><li>It also created Brave Kids, for children’s art groups from conflict regions.</li><li>Last edition found: the 13th, in 2018.</li></ul><blockquote class="kexp__quote" data-ph="consent"><p>“I highly recommend this collaboration and encourage you to work with GetLineApp to create your own mobile app.”</p><footer><img src="assets/partners/photos/agnieszka-kiewicz-400.jpg" alt="" loading="lazy"><span><b>Agnieszka Kiewicz</b><span>Production Manager, Brave Festival</span></span></footer></blockquote></div>
+      </article>
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/sold-out-agencja.png" alt="SOLD OUT Agencja" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">SOLD OUT Agencja</h3><p class="kexp__meta">Warsaw · the agency behind EKIPA Festiwal</p><span class="pa-q tmp">Temporary quote</span>
+        <div class="kexp__more"><ul class="kexp__facts"><li>A Warsaw music agency: tours, festivals, booking and management.</li><li>Produces SBM FFestival and organised EKIPA Festiwal 2026.</li></ul><blockquote class="kexp__quote" data-ph="quote"><p>“We sell out arenas for people who grew up on YouTube. At EKIPA Festiwal half the audience is twelve and the other half is their parents, so the app had to work for both: what’s on now, where to meet, when to go home. LineApp got that.”</p><footer><span><b>Marta T. · placeholder name</b><span>Producer (temporary role)</span></span></footer><span class="kexp__ph">Temporary quote · placeholder name</span></blockquote></div>
+      </article>
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/ekipa.png" alt="EKIPA Festiwal" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">EKIPA Festiwal</h3><p class="kexp__meta">Kraków · TAURON Arena</p>
+        <div class="kexp__more"><ul class="kexp__facts"><li>The arena show of Friz’s YouTube crew, EKIPA.</li><li>First edition in 2024: 17,500 tickets sold.</li><li>Third edition on 6 June 2026.</li></ul><p class="kexp__noq">Quote on its way. We’re asking the festival.</p></div>
+      </article>
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/globaltica.png" alt="Globaltica" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">Globaltica</h3><p class="kexp__meta">Gdynia · since 2005</p>
+        <div class="kexp__more"><ul class="kexp__facts"><li>A world-music festival in a seaside park by the Baltic.</li><li>21st edition in July 2026.</li></ul><p class="kexp__noq">Quote on its way. We’re asking the festival.</p></div>
+      </article>
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/ethno-port-poznan.png" alt="Ethno Port Poznań" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">Ethno Port Poznań</h3><p class="kexp__meta">Poznań · since 2008</p>
+        <div class="kexp__more"><ul class="kexp__facts"><li>The world-music festival of the Zamek Culture Centre.</li></ul><p class="kexp__noq">Quote on its way. We’re asking the festival.</p></div>
+      </article>
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/pannonica-festival.png" alt="Pannonica Festival" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">Pannonica Festival</h3><p class="kexp__meta">Barcice · since 2013</p>
+        <div class="kexp__more"><ul class="kexp__facts"><li>Balkan, Hungarian and Roma music in the Poprad valley.</li><li>Several thousand guests a year.</li></ul><p class="kexp__noq">Quote on its way. We’re asking the festival.</p></div>
+      </article>
+      <article class="kexp__item" data-ph="consent">
+        <div class="kexp__logo"><img src="assets/partners/logos/fotofestiwal.png" alt="Fotofestiwal" data-invert loading="lazy"></div>
+        <h3 class="kexp__name">Fotofestiwal</h3><p class="kexp__meta">Łódź · since 2001</p>
+        <div class="kexp__more"><ul class="kexp__facts"><li>Poland’s first independent festival of photography, 40+ exhibitions across Łódź.</li></ul><p class="kexp__noq">Quote on its way. We’re asking the festival.</p></div>
+      </article>
+    </div>
+    <p class="small pa-f">Quotes as published on getlineapp.com; three are temporary placeholders and say so. Faces, logos and quotes need each festival’s approval before anything is published.</p>
+  </div>
+</section>
+
+<!-- ===================== 10 · Reviews ===================== -->
+<section class="sec reviews" id="reviews" aria-labelledby="rv-h">
+  <div class="wrap rv-head">
+    <div><p class="eyebrow">Reviews</p>
+    <h2 class="h2" id="rv-h">Heard on the field. <span class="lime">And on Reddit.</span></h2>
+    <p class="hand rv-hand">(we left the grumpy ones in.)</p></div>
+    <div class="laurel" data-ph="number">
+      <svg class="lau" aria-hidden="true"><use href="#laurel"/></svg>
+      <div class="lau-in"><b>4.8</b><span class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><small>2,140 reviews<br>App Store 4.8 · Google Play 4.7</small></div>
+      <svg class="lau flip" aria-hidden="true"><use href="#laurel"/></svg>
+    </div>
+  </div>
+  <div class="kmq-group revs" data-marquee-group data-marquee-name="reviews" data-ph="review">
+    <div class="kmq" data-marquee data-speed="24"><ul class="kmq__track" id="rowA"></ul></div>
+    <div class="kmq" data-marquee data-speed="19" data-direction="right"><ul class="kmq__track" id="rowB"></ul></div>
+  </div>
+  <p class="wrap small rv-ph">Reviews shown are placeholders for this test page.</p>
+</section>
+
+<!-- ===================== 11 · Industry vs us ===================== -->
+<section class="sec vs" id="compare" aria-labelledby="vs-h">
+  <div class="wrap">
+    <div class="sec-head row-head">
+      <div><p class="eyebrow">The important slide</p>
+      <h2 class="h2" id="vs-h">Industry vs us.</h2></div>
+      <p class="lead small-lead">Drag the line. All the way left is LineApp, all the way right is the festival app most of us have used. No names; you know the ones.</p>
+    </div>
+    <div class="cmp-tabs" role="group" aria-label="Choose what to compare">
+      <button type="button" aria-pressed="true" data-pair="0">The map</button><button type="button" aria-pressed="false" data-pair="1">The line-up</button>
+    </div>
+    <div class="kcmp cmp" id="cmp" data-compare data-start="50" data-label-a="Us" data-label-b="Industry">
+      <div class="kcmp__a"><div class="side"><div class="scr" id="cmpA"></div></div></div>
+      <div class="kcmp__b"><div class="side"><div class="scr" id="cmpB"></div></div></div>
+    </div>
+    <div class="cmp-caps">
+      <p class="cc cc-b" id="ccB"><i data-mark2="cross" data-mark2-style="badge" aria-label="Industry"></i><span><small>Industry</small><span id="cmpBc"></span></span></p>
+      <p class="cc cc-a" id="ccA"><span><small>Us</small><span id="cmpAc"></span></span><i data-mark2="tick" data-mark2-style="badge" aria-label="Us"></i></p>
+    </div>
+    <table class="vs-t" data-ph="feature">
+      <thead><tr><th scope="col"></th><th scope="col" class="us">Us</th><th scope="col">Industry</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Friends</th><td class="u"><i data-mark2="tick" data-mark2-style="badge" data-mark2-draw data-mark2-delay="0" aria-label="Yes"></i>Your crew on the map, even on one bar of signal.</td><td class="i"><i data-mark2="cross" data-mark2-style="badge" aria-label="No"></i>“Where are you?” fourteen times in the group chat.</td></tr>
+        <tr><th scope="row">Storm</th><td class="u"><i data-mark2="tick" data-mark2-style="badge" data-mark2-draw data-mark2-delay="100" aria-label="Yes"></i>One push to every phone with the app, read in minutes.</td><td class="i"><i data-mark2="cross" data-mark2-style="badge" aria-label="No"></i>A post on social, if the socials are up.</td></tr>
+        <tr><th scope="row">Sponsors</th><td class="u"><i data-mark2="tick" data-mark2-style="badge" data-mark2-draw data-mark2-delay="200" aria-label="Yes"></i>Eight places, each one counted.</td><td class="i"><i data-mark2="cross" data-mark2-style="badge" aria-label="No"></i>A logo on the splash screen, guessed.</td></tr>
+        <tr><th scope="row">Your data</th><td class="u"><i data-mark2="tick" data-mark2-style="badge" data-mark2-draw data-mark2-delay="300" aria-label="Yes"></i>Yours. Who paid, who came. Not ours.</td><td class="i"><i data-mark2="cross" data-mark2-style="badge" aria-label="No"></i>Sits with the ticket site.</td></tr>
+      </tbody>
+    </table>
+    <p class="small vs-f">Based on festival apps we and festival teams have used, not on any one company.</p>
+  </div>
+</section>
+
+<!-- ===================== 12 · FAQ ===================== -->
+<section class="sec faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq-grid">
+    <div class="faq-side">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="h2" id="faq-h">FAQ. <span class="lime">Go on. Ask the awkward ones.</span></h2>
+      <p class="small" style="margin-top:18px">Your question isn’t here? Put it in the form. We answer it in the demo.</p>
+    </div>
+    <div>
+      <div class="tabs-row" role="tablist" aria-label="FAQ categories" id="faqTabs">
+        <button role="tab" type="button" aria-selected="true" aria-controls="fq-0" id="ft-0">Festival</button>
+        <button role="tab" type="button" aria-selected="false" aria-controls="fq-1" id="ft-1" tabindex="-1">Sponsors</button>
+        <button role="tab" type="button" aria-selected="false" aria-controls="fq-2" id="ft-2" tabindex="-1">Money</button>
+        <button role="tab" type="button" aria-selected="false" aria-controls="fq-3" id="ft-3" tabindex="-1">Data &amp; privacy</button>
+        <button role="tab" type="button" aria-selected="false" aria-controls="fq-4" id="ft-4" tabindex="-1">Tech &amp; integrations</button>
+        <button role="tab" type="button" aria-selected="false" aria-controls="fq-5" id="ft-5" tabindex="-1">For the people</button>
+      </div>
+      <div class="acc fq" role="tabpanel" id="fq-0" aria-labelledby="ft-0">
+        <details open><summary>“We’ve had festival apps before. Nobody used them, and they died on Monday.”</summary><div><p>Then you know what to ask us. We agree an adoption target with you before launch, put QR codes at the gates and the campsites, and show you installs every day from the first one. If the numbers are bad, the Monday report says so in the first line.</p></div></details>
+        <details><summary>“And in a storm, what about everyone who hasn’t got the app?”</summary><div><p>The app is one more channel, not your safety plan. Your PA, screens and stewards still lead. The push reaches the phones a speaker can’t: the far bar, the campsite, the shuttle stop. We write the alert templates with your safety lead before the gates open.</p></div></details>
+        <details><summary>“What if it crashes at the worst possible moment?”</summary><div><p>It was built for that moment. The line-up and the Map work offline, the push doesn’t need social media, and people are on call all weekend.</p></div></details>
+        <details><summary>“Can it help us sell next year’s tickets?”</summary><div><p>It’s the shortest route to your warmest fans. Build an opted-in segment, such as everyone who saved three techno sets, and send the early-bird push the morning sales open.</p></div></details>
+        <details><summary>“How long does it take?”</summary><div><p><span data-ph="number">Seven</span> days from your poster to your app. A line-up, a map and your brand book are enough to start.</p></div></details>
+      </div>
+      <div class="acc fq" role="tabpanel" id="fq-1" aria-labelledby="ft-1" hidden data-ph="number">
+        <details open><summary>“How do I know people actually saw my logo?”</summary><div><p>Every time it’s on screen, it’s counted. The report shows how many people saw it and how many times, place by place. At the example festival: 18,240 people, 1.61 million times across the eight places.</p></div></details>
+        <details><summary>“Can we get the contacts of people who visit our zone?”</summary><div><p>Yes, if they say yes. A guest scans the code in your zone, reads your name and the reason, and switches it on. You get a first name and a number with the consent recorded. It’s never pre-ticked, and one tap takes it back.</p></div></details>
+        <details><summary>“We’re an alcohol brand. Can we even do this?”</summary><div><p>Yes, with rules built in: pushes only to guests past the 18+ check, at sensible hours, three a day at most. Copy about music and good nights, not about drinking more.</p></div></details>
+        <details><summary>“Will my competitor be in the same app?”</summary><div><p>Not in your category: one sponsor per category per edition. You approve every cover, card and push before it runs, and the festival can pause sponsor content at any moment, as it does in a storm.</p></div></details>
+        <details><summary>“Won’t people just mute the pushes?”</summary><div><p>They will if we spam them, so we don’t. Sponsor pushes are capped, sent to a zone and always useful. Mute rates are in the report.</p></div></details>
+      </div>
+      <div class="acc fq" role="tabpanel" id="fq-2" aria-labelledby="ft-2" hidden data-ph="price">
+        <details open><summary>“What does it cost?”</summary><div><p>For a festival of this size, £20,000 for one edition in the worked example. One sponsor package of £40,000 covers it and leaves £20,000 with you. With no package sold, you pay the £20,000.</p></div></details>
+        <details><summary>“Who pays whom?”</summary><div><p>The sponsor pays the festival, as with any sponsorship. The festival pays LineApp for the app. In the example, half the package pays for the app and half stays with the festival.</p></div></details>
+        <details><summary>“An app that lives for three days is expensive.”</summary><div><p>It works before (announcements, early-bird), during (My plan, the Map, alerts) and after (the report, the next edition). And the sponsor package pays for it.</p></div></details>
+      </div>
+      <div class="acc fq" role="tabpanel" id="fq-3" aria-labelledby="ft-3" hidden>
+        <details open><summary>“Who owns the data: us or you?”</summary><div><p>You do. Your festival is the controller; LineApp is the processor, under a data processing agreement signed before launch. Leave whenever you like and take everything in one export, free.</p></div></details>
+        <details><summary>“What do festival-goers have to give up?”</summary><div><p>Very little. No account needed, analytics anonymous by default, location off until they switch it on, and a plain-English consent screen per purpose. People see and delete what we hold in two taps.</p></div></details>
+        <details><summary>“Is it GDPR-proof, and where does it live?”</summary><div><p>Built for EU law from the first screen. Hosted in the EU, with a DPA, a ready assessment for location features and a record of every consent.</p></div></details>
+        <details><summary>“What do you never do with our data?”</summary><div><p>Sell it, to sponsors, brokers or anyone. Hand a sponsor anyone’s details without that person’s own yes. Track location in the background or without consent.</p></div></details>
+        <details><summary>“What don’t your numbers claim?”</summary><div><p>That a “user” is a person: a user is an install, so a second phone counts twice. That every push was delivered: we report pushes sent and messages read. That the app sold the pints: we count zone visits and coupons, not sales.</p></div></details>
+        <details><summary>“Our ticketing doesn’t give us anything. What’s different?”</summary><div><p>Your ticketing tells you how many tickets you sold. Connect it, and the app tells you who paid and who came, gate by gate. One buyer often brings friends, and only the app sees them.</p></div></details>
+      </div>
+      <div class="acc fq" role="tabpanel" id="fq-4" aria-labelledby="ft-4" hidden>
+        <details open><summary>“Which numbers need an integration?”</summary><div><p>Inside vs outside the gates needs your ticketing. Shortest queue needs bar tills or cashless. Locker numbers need the locker partner. Everything else (pushes, the Map, placements, consent contacts) comes from the app itself.</p></div></details>
+        <details><summary>“Can we take the data into our own tools?”</summary><div><p>Yes, that’s the point. CSV or Google Sheets, opted-in contacts to Mailchimp or Brevo, or an API and webhooks. No export fees.</p></div></details>
+        <details><summary>“We have no IT team.”</summary><div><p>You don’t need one. The panel is as simple as a form. Press Send and it’s on every phone with the app. We sit beside you for the first festival.</p></div></details>
+      </div>
+      <div class="acc fq" role="tabpanel" id="fq-5" aria-labelledby="ft-5" hidden>
+        <details open><summary>“Does my crew see where I am all the time?”</summary><div><p>Only if you share it, only with your crew, and you can switch it off in two taps.</p></div></details>
+        <details><summary>“Do I need an account?”</summary><div><p>No. Open the app and go. An emoji is enough to be someone for the weekend.</p></div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 13 · Team ===================== -->
+<section class="sec team" id="team" aria-labelledby="team-h">
+  <div class="wrap team-grid">
+    <div>
+      <p class="eyebrow">Who we are</p>
+      <h2 class="h2" id="team-h">We’ve stood in the mud too.</h2>
+      <p class="team-line">Small on purpose. <span class="lime">You talk to the people who build it.</span></p>
+    </div>
+    <ul class="crew">
+      <li><img src="assets/team/iwona-dark-circle-800.jpg" alt="Iwona, poster-style portrait" loading="lazy" width="800" height="800" data-ph="consent"><b>Iwona</b><span>QA · ideas · gravity</span></li>
+      <li><img src="assets/team/grzegorz-dark-circle-800.jpg" alt="Grzegorz, poster-style portrait" loading="lazy" width="800" height="800" data-ph="consent"><b>Grzegorz</b><span>founder · product · too many ideas</span></li>
+      <li><img src="assets/team/pawel-dark-circle-800.jpg" alt="Paweł, poster-style portrait" loading="lazy" width="800" height="800" data-ph="consent"><b>Paweł</b><span>CTO · code · the brakes</span></li>
+      <li class="bot"><div class="mascot" role="img" aria-label="Claude Code, a pixel mascot"><img id="mascot" src="assets/team/claude-code-mascot-down.svg" alt="" width="144" height="48"></div><b>Claude Code</b><span>AI · pixel mascot · not a person</span><span class="hand">(it wrote some of this page. we checked.)</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== 14 · Form (black) ===================== -->
+<section class="sec final" id="final" aria-labelledby="fin-h">
+  <div class="wrap fin-grid">
+    <div class="fin-phone">
+      <div class="home-ph" id="homePh" role="img" aria-label="Preview of your festival's app home screen, with the name and dates you type">
+        <div class="hs">
+          <div class="hs-stat"><span>18:00</span><svg aria-hidden="true"><use href="#i-sig"/></svg></div><div class="hs-isl"></div>
+          <p class="hs-k" id="pvDates">Your festival · your dates</p>
+          <p class="hs-name" id="pvName">Your festival</p>
+          <p class="hs-wel" id="pvWel">Your weekend starts here.</p>
+          <div class="hs-cd" id="pvCd" data-countdown data-countdown-for="#fFrom" data-countdown-end="#fTo" data-locale="en-GB" data-text-empty="Pick a date. We’ll count down." data-text-today="Festival starts today. Gates open soon." data-text-during="Day {d} of {total}. You’re live." data-text-last="Last day. You’re live." data-text-past="That date has passed. Next edition?"></div>
+          <div class="hs-card"><p class="hs-ck">Tonight · Main Stage</p><p class="hs-art">Ellis Rook</p><p class="hs-sub">23:15 · on your plan</p></div>
+          <div class="hs-row" id="pvPartner" hidden><span class="pl">Partner</span><b id="pvPartnerT">Your sponsor</b></div>
+          <div class="hs-tabs"><span class="on"><svg><use href="#i-disc"/></svg>Discover</span><span><svg><use href="#i-line"/></svg>Line-up</span><span><svg><use href="#i-map"/></svg>Map</span><span><svg><use href="#i-me"/></svg>Me</span></div><div class="hs-home"></div>
+        </div>
+      </div>
+      <span class="hand fin-hand">(the phone is listening)</span>
+    </div>
+    <div class="fin-form">
+      <p class="eyebrow lime">Your name on the screen in ten seconds. Your demo in 24 hours.</p>
+      <h2 class="h2" id="fin-h">Type your festival’s name. <span class="lime">Watch it become an app.</span></h2>
+      <p class="lead">A branded demo of your festival’s app in your inbox within 24 hours. No call, no deck, no commitment.</p>
+      <div class="mini-pv" id="miniPv" aria-hidden="true"><span class="mp-k" id="mpDates">Your festival · your dates</span><span class="mp-n" id="mpName">Your festival</span><span class="mp-c" id="mpCd">Pick a date. We’ll count down.</span><span class="mp-p" id="mpPartner" hidden>Partner · <b id="mpPartnerT">Your sponsor</b></span></div>
+      <form id="form" novalidate>
+        <div class="f2">
+          <label class="fld"><span>Festival name</span><input id="fName" name="name" type="text" autocomplete="organization" placeholder="e.g. OFF Festival" maxlength="48" required><small class="help">A working title is fine.</small><small class="err" id="eName"></small></label>
+          <label class="fld"><span>Work e-mail</span><input id="fMail" name="email" type="email" autocomplete="email" placeholder="you@yourfestival.com" required><small class="help">We send one e-mail: your demo.</small><small class="err" id="eMail"></small></label>
+        </div>
+        <label class="fld"><span>Festival website</span><input id="fWeb" name="website" type="url" inputmode="url" placeholder="yourfestival.com"><small class="help">Optional. We take your colours from it.</small></label>
+        <div class="f2">
+          <label class="fld"><span>First day</span><input id="fFrom" name="from" type="date"></label>
+          <label class="fld"><span>Last day</span><input id="fTo" name="to" type="date"></label>
+        </div>
+        <p class="cd-inline" id="cdInline" aria-hidden="true">Pick a date. We’ll count down.</p>
+        <label class="fld"><span>Expected guests</span><input id="fGuests" name="guests" type="number" min="0" step="500" inputmode="numeric" placeholder="e.g. 40,000"><small class="help">A day, or your last edition.</small></label>
+        <label class="chk"><input id="fSpon" type="checkbox" aria-controls="sponX" aria-expanded="false"><span class="box" aria-hidden="true"></span><span>We have sponsors, or we want the sponsor package</span></label>
+        <div class="sponx" id="sponX" hidden>
+          <div class="f2">
+            <label class="fld"><span>How many sponsors</span><select id="fSN" name="sponsors"><option value="">Choose</option><option>None yet</option><option>1</option><option>2 to 3</option><option>4 or more</option></select></label>
+            <label class="fld"><span>Main sponsor category</span><select id="fSC" name="category"><option value="">Choose one</option><option>Drinks</option><option>Food</option><option>Telecom</option><option>Bank or payments</option><option>Sportswear</option><option>Car or mobility</option><option>Local business</option><option>Other</option></select></label>
+          </div>
+        </div>
+        <button class="btn btn-lime btn-lg" type="submit" id="fBtn">Generate your app</button>
+        <p class="small">Demo in your inbox within 24 hours. We never share your e-mail.</p>
+      </form>
+      <div class="thanks" id="thanks" hidden tabindex="-1">
+        <p class="eyebrow lime">Done</p>
+        <h3 class="h2s">Done. <span id="tName">Your festival</span> is on its way.</h3>
+        <p>Your branded demo lands in your inbox within 24 hours. Iwona checks it before it leaves. Want your sponsor to see it too? Forward the e-mail. It’s built for that.</p>
+        <p class="small">This is a test page. Nothing was sent anywhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand" href="#top" aria-label="LineApp, back to the top"><svg viewBox="0 0 4060 940" aria-hidden="true"><use href="#logo"/></svg></a>
+    <p class="small">Festival apps that report back · © 2026 Cocolab · London and Kraków</p>
+    <div class="size" role="group" aria-label="Your festival size"><span class="size-l">Your festival</span><a href="../field-notes-s/index.html">up to 10k</a><a href="../confetti-club-m/index.html">10–40k</a><a href="../north-stage-xl/index.html" aria-current="page">40k+</a></div>
+  </div>
+  <p class="wrap small foot-ph">Test page. Every item marked as a placeholder will be replaced with real material, and every face, logo, quote and case approved, before anything is published.</p>
+</footer>
+
+<!-- ============ overlays (kit) ============ -->
+<template id="ov-report"><div class="ovx">
+  <p class="eyebrow">Example report · invented numbers</p><h2 class="h2s">The sponsor’s report, the Monday after</h2>
+  <p>Eight pages, the way a sponsor’s board receives it. Scroll through, then download.</p>
+  <div class="rep-pages">
+    <img src="assets/sponsor/report/report-XL-p1.jpg" alt="Page 1: the cover and the summary." loading="lazy">
+    <img src="assets/sponsor/report/report-XL-p2.jpg" alt="Page 2: at a glance." loading="lazy">
+    <img src="assets/sponsor/report/report-XL-p3.jpg" alt="Page 3: where the brand lived, people and times per place." loading="lazy">
+    <img src="assets/sponsor/report/report-XL-p4.jpg" alt="Page 4: the bar zone." loading="lazy">
+    <img src="assets/sponsor/report/report-XL-p5.jpg" alt="Page 5: people who said yes." loading="lazy">
+    <img src="assets/sponsor/report/report-XL-p6.jpg" alt="Page 6: did it move people: push, coupons, Monday survey." loading="lazy">
+    <img src="assets/sponsor/report/report-XL-p7.jpg" alt="Page 7: the SBM case." loading="lazy">
+    <img src="assets/sponsor/report/report-XL-p8.jpg" alt="Page 8: the money, the 50/50 split and the price list." loading="lazy">
+  </div>
+  <div class="dl"><a class="btn btn-lime" href="assets/sponsor/report-XL.pdf" download><svg aria-hidden="true"><use href="#i-down"/></svg>Download the example PDF</a><a class="btn btn-line" href="assets/sponsor/your-logo-XL.pdf" download><svg aria-hidden="true"><use href="#i-down"/></svg>Download the “your logo” PDF</a></div>
+</div></template>
+
+<template id="ov-consent"><div class="ovx">
+  <p class="eyebrow">The contact hand-off</p><h2 class="h2s">How consent works</h2>
+  <ol class="rules">
+    <li><b>Separate.</b> The yes to the sponsor is its own switch, never bundled with anything else.</li>
+    <li><b>Off until they turn it on.</b> Never pre-ticked.</li>
+    <li><b>Named.</b> The screen says which sponsor is asking, and why.</li>
+    <li><b>Little.</b> The sponsor gets a first name and a number. Nothing else.</li>
+    <li><b>Reversible.</b> One tap in Me takes it back, and the sponsor is told.</li>
+  </ol>
+  <button class="btn btn-line" type="button" data-overlay-close>Done</button>
+</div></template>
+
+<template id="ov-count"><div class="ovx">
+  <p class="eyebrow">How each place is counted</p><h2 class="h2s">One line per place in the report</h2>
+  <ul class="rules plain">
+    <li><b>Logo in the tab bar.</b> One per screen opened: the logo sits in the tab bar on every screen.</li>
+    <li><b>Launch cover and Discover poster.</b> Each time it was on screen for at least a second.</li>
+    <li><b>Push to the bar zone.</b> Each push delivered to a phone in the zone (18+ only, three a day at most).</li>
+    <li><b>Shop shelf.</b> Each time the brand’s shelf was on screen.</li>
+    <li><b>Sponsored stage and map pin.</b> Each time the stage or pin was on screen, or opened.</li>
+    <li><b>Identity card frame.</b> Each card made or opened in the brand’s frame.</li>
+    <li><b>FAQ answer.</b> Each time a “Brought to you by” answer was opened.</li>
+    <li><b>Monday survey.</b> Each time the question was opened. Answers are counted separately.</li>
+  </ul>
+  <button class="btn btn-line" type="button" data-overlay-close>Done</button>
+</div></template>
+
+<template id="ov-data"><div class="ovx">
+  <p class="eyebrow">FAQ · Data &amp; privacy</p><h2 class="h2s">Who owns it, where it’s kept, for how long</h2>
+  <div class="acc">
+    <details open><summary>“Who owns the data: us or you?”</summary><div><p>You do. Your festival is the controller; LineApp is the processor, under a data processing agreement signed before launch. Leave whenever you like and take everything in one export, free.</p></div></details>
+    <details><summary>“Where is it kept?”</summary><div><p>Hosted in the EU, with a DPA, a ready assessment for location features and a record of every consent.</p></div></details>
+    <details><summary>“For how long?”</summary><div><p>As long as your agreement says, and no longer. You can ask for everything to be deleted at the end of the edition.</p></div></details>
+    <details><summary>“What do festival-goers give up?”</summary><div><p>Very little. No account needed, location off until they switch it on, and a plain-English consent screen per purpose.</p></div></details>
+  </div>
+</div></template>
+
+<script src="assets/kit/header.js"></script>
+<script src="assets/kit/overlay.js"></script>
+<script src="assets/kit/marks.js"></script>
+<script src="assets/kit/marks2.js"></script>
+<script src="assets/kit/compare.js"></script>
+<script src="assets/kit/confetti.js"></script>
+<script src="assets/kit/marquee.js"></script>
+<script src="assets/kit/tickets.js"></script>
+<script src="assets/kit/calculator.js"></script>
+<script src="assets/kit/printer.js"></script>
+<script src="assets/kit/consent3.js"></script>
+<script src="assets/kit/journey.js"></script>
+<script src="assets/kit/orbit.js"></script>
+<script src="assets/kit/expand.js"></script>
+<script src="assets/kit/countdown.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* LineApp · page S · "Apple density" variant (11.10.2026).
+   Measured on apple.com (iPhone 18 Pro, iPhone Air, AirPods Pro 3, MacBook Air, iPad Pro) at 1440×900 and 390×844:
+   one idea per screen, 33–58 words per screen (median), 2–6 text blocks, body text 17–21 px, paragraphs of 10–15 words,
+   detail behind "+" buttons, galleries and tabs. This file only takes words away from round 4 and makes text larger. */
+
+/* detail moves behind a "+" (the original text stays in the page and opens in a sheet) */
+.a4 [data-a4-more], .a4 .a4-hide { display: none !important; }
+.a4-plus { display: inline-flex; align-items: center; gap: 10px; margin-top: 14px; padding: 4px 0; border: 0; background: none; color: var(--paper); font: inherit; font-size: 15px; font-weight: 650; cursor: pointer; text-align: left; }
+.a4-plus i { flex: none; width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--lime); display: grid; place-items: center; color: var(--lime); font-style: normal; font-size: 18px; font-weight: 500; line-height: 1; transition: background .2s, color .2s; }
+.a4-plus:hover i, .a4-plus:focus-visible i { background: var(--lime); color: var(--lime-ink); }
+.sp-band .a4-plus { color: var(--lime-ink); } .sp-band .a4-plus i { border-color: var(--lime-ink); color: var(--lime-ink); }
+dialog.a4-dlg { width: min(680px, calc(100% - 32px)); max-height: min(86vh, 900px); margin: auto; padding: 0; border: 0; border-radius: 28px; background: var(--ink-1); color: var(--paper); box-shadow: 0 0 0 1px var(--line), 0 40px 120px -20px rgba(0,0,0,.9); overflow: auto; }
+dialog.a4-dlg::backdrop { background: rgba(5,5,6,.72); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.a4-dlg .a4-in { padding: clamp(28px, 5vw, 56px); display: grid; gap: 16px; font-size: 19px; line-height: 1.5; color: var(--mute); }
+.a4-dlg h3 { font-size: clamp(26px, 3vw, 36px); font-weight: 850; letter-spacing: -.02em; line-height: 1.05; color: var(--paper); padding-right: 48px; }
+.a4-dlg .a4-in p, .a4-dlg .a4-in li, .a4-dlg .a4-in span { font-size: 19px; }
+.a4-dlg .a4-in b, .a4-dlg .a4-in strong { color: var(--paper); }
+.a4-dlg .a4-x { position: sticky; top: 16px; float: right; margin: 16px 16px 0 0; width: 40px; height: 40px; border-radius: 50%; border: 0; background: var(--ink-3); color: var(--paper); font-size: 22px; line-height: 1; cursor: pointer; z-index: 2; }
+.a4-dlg .vs-rows { margin: 0; } .a4-dlg .vr { grid-template-columns: 1fr; gap: 6px; padding: 14px 0; }
+.a4-dlg .mate-l { display: grid; gap: 4px; } .a4-dlg .mate-l b { font-size: 19px; }
+
+/* body text at Apple sizes */
+.a4 .lead, .a4 .small-lead, .a4 .pp-txt p, .a4 .pace-txt p, .a4 .c4-t p, .a4 .case-body, .a4 .gets li span,
+.a4 .data p, .a4 .yes-n4 p, .a4 .calc-intro p, .a4 .pq blockquote { font-size: 17px; line-height: 1.47; }
+.a4 .pq blockquote { font-size: clamp(19px, 1.5vw, 21px); }
+.a4 .pp-txt .h3, .a4 .pace-txt .h3 { font-size: clamp(22px, 2vw, 28px); }
+
+/* fewer words per screen */
+.a4 .kcalc__note { display: none; }                 /* the note shows under the big phone instead */
+.a4 .calc .kcalc__row { min-height: 56px; }
+.a4 .i4 > span:last-child { display: none; }        /* tiles keep tag and title */
+.a4 .needs { display: none; }                       /* panel caveats live behind "How the panel counts" */
+.a4 .pt-grid .kexp__name, .a4 .pt-grid .kexp__meta, .a4 .pt-grid .pt-tag { display: none; }   /* partner grid: logos only */
+.a4 .pt-grid .kexp__item { min-height: 132px; display: grid; place-items: center; }
+.a4 .pt-grid .kexp__logo { margin: 0; }
+.a4 .mq .kmq:has(#rowB) { display: none; }          /* reviews: one row */
+.a4 .rv-card > p { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.a4 .mate .cap { margin-top: 2px; }
+.a4 .vs4-cap .vk { display: none; }
+@media (max-width: 760px) { .a4 .st-hint { display: none; } }
+.a4 .rv-card > p { -webkit-line-clamp: 3; }
+.a4 .korb__hint p:not(.faint) { font-size: 15px; }
+.a4 .rv-card > p { -webkit-line-clamp: 2; }
+.a4 .vs4-cap .vt { display: none; }                 /* the industry phone already shows it */
+.a4-plus.in { display: flex; width: fit-content; margin-top: 12px; }
+.a4 .pt-grid .kexp__item { min-height: 116px; align-content: center; justify-content: center; } .a4 .pt-grid .kexp__logo { margin: 0 auto; }
